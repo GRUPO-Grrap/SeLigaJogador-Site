@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\AdController;
+
+Route::get('/', [AdController::class, 'index']);
+Route::get('/announce', [AdController::class, 'announce']);
