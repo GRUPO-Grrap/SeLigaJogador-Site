@@ -17,7 +17,7 @@
     </head>
     <body class="antialiased">
         <header>
-            <p>Aqui fica o header</p>
+            @yield('header')
         </header>
 
         @yield('content')
