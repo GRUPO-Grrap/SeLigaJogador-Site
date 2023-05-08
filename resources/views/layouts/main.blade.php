@@ -16,15 +16,7 @@
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body class="antialiased">
-        <header>
-            @yield('header')
-        </header>
-
         @yield('content')
-
-        <footer>
-            <p>Aqui fica o footer!</p>
-        </footer>
         <script src="/js/scripts.js"></script>
     </body>
 </html>

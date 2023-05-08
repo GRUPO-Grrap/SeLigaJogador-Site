@@ -4,6 +4,5 @@
 
 @section('contentSecondary')
 
-    <h2>Anunciar</h2>
-
+    
 @endsection
