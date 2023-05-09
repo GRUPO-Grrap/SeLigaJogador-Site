@@ -5,12 +5,29 @@
 @section('contentSecondary')
     @include('layouts._partials.navbar_secundary')
     <div>
-        <button>Conta</button>
-        <button>Anúncio</button>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" 
+              style="
+              background-color: #fafafa;
+              color: #1a0d42a1;
+              border: solid 1px #1a0d42a1;" aria-current="page" href="#">Conta</a>
+            </li>
+          
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link active" 
+              style="
+              background-color: #FF66C4; 
+              color: white; 
+              border: solid 1px #FF66C4;" href="#">Anuncio</a>
+            </li>
+        </ul>
     </div>
     
-    <form action="#" style="border: solid 2px rgb(222, 0, 155)">
+    <form action="#" style="border: solid 2px #FF66C4">
         <div>
+            <div>icone aqui</div>
             <h2>Anúncio</h2>
             <p>Escolha um título para seu anúncio</p>
             <input type="text"  placeholder="Digite aqui o nome do seu anuncio">
@@ -66,3 +83,4 @@
     </form>
 
 @endsection
+
