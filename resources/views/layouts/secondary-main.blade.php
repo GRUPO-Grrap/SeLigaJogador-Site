@@ -16,9 +16,6 @@
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body class="antialiased">
-        <header>
-            <p>Aqui fica o header</p>
-        </header>
 
         @yield('contentSecondary')
 
