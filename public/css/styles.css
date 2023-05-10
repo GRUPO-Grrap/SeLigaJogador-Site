@@ -12,52 +12,11 @@
     --main-color-roxo: #5A3EF7;
 }
 
-.card {
-    width: 172px; 
-    height: 236px;
-    padding: 16px 8px 16px 8px;
-    margin: 10px;
-
-    border: solid 2px var(--main-color-rosa);
-    border-radius: 8px;
-    text-align: center;
+p{
+    margin: 0;
     align-items: center;
-    color: var(--main-color-azul);
 }
 
-.img_card{
-    width: 156px; 
-    height: 90px;
-    font-size: 10px;
-}
-
-.title_account {
-    margin-top: 16px;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.card_price {
-    margin-top: 16px;
-
-    width: 108px;
-    height: 28px;
-
-    color:  var(--main-color-rosa);
-    font-weight: bolder;
-    font-size: 16px;
-
-    border: solid 2px var(--main-color-rosa);
-    border-radius: 8px;
-
-    align-items: center;
-    text-align: center;
-}
-
-.name_user {
-    margin-top: 8px;
-}
-
-.teste {
-    display: flex;
+.div_main_card {
+        display: inline-block;
 }

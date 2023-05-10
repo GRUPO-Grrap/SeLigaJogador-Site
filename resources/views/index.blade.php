@@ -13,7 +13,7 @@
         <h3>Vendas</h3>
     </div>
     
-    <div class="teste">
+    <div class="div_main_card ">
         @include('layouts._partials.card')
         @if(count($adverts) == 0)
             <p>Não tem contas!</p>
