@@ -7,12 +7,14 @@
     <!--Aqui está o header e o navbar-->
     @include('layouts._partials.navbar')
 
-    <div>
-        <h1>O Marketplace para sua conta está aqui!</h1>
-        <a href="/events/announce" class="btn btn-dark">Anunciar</a>
-        <h3>Vendas</h3>
-    </div>
-    
+    <section class="content_top">
+        <div class="content_top_text">
+          <h2 class="content_top_title">O Marketplace para sua conta está aqui!</h2>
+          <h3 class="content_top_subtitle">Venda sua conta com com a gente jogador!</h3>
+          <a href="/events/announce"><button class="content_top_button">Anunciar</button></a>
+        </div>
+    </section>
+
     <div class="div_main_card ">
         @include('layouts._partials.card')
         @if(count($adverts) == 0)
