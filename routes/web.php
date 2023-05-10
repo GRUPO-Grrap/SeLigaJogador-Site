@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\AdController;
+use App\Http\Controllers\UserController;
 
-Route::get('/', [AdController::class, 'index']);
-Route::get('/announce', [AdController::class, 'announce']);
+Route::get('/', [UserController::class, 'index']);
+Route::get('/events/announce', [UserController::class, 'announce']);
+Route::post('/events', [UserController::class, 'store']);
