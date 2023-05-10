@@ -9,11 +9,17 @@
 
     <div>
         <h1>O Marketplace para sua conta está aqui!</h1>
-        <a href="/announce" class="btn btn-dark">Anunciar</a>
+        <a href="/events/announce" class="btn btn-dark">Anunciar</a>
+        <h3>Vendas</h3>
     </div>
     
-    @include('layouts._partials.card')
-
+    <div class="teste">
+        @include('layouts._partials.card')
+        @if(count($adverts) == 0)
+            <p>Não tem contas!</p>
+        @endif
+    </div>
+    
     <!--Aqui está o footer e o navbar-->
     @include('layouts._partials.footer')
 @endsection
