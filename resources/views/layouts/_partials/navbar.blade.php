@@ -37,7 +37,7 @@
         <img src="img/logo.svg" alt="Bootstrap" width="157" height="40">
       </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span><img src="img/menu_icon.svg" alt="icone em formato svg de menu"></span>
+      <div class="img_menu"><img src="img/menu_icon.svg" alt="icone em formato svg de menu"></div>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
