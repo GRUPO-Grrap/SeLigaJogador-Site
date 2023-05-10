@@ -5,4 +5,5 @@
         <img src="img/logo.svg" alt="Bootstrap" width="157" height="40">
       </a>
     </div>
+  </div>
 </nav>
