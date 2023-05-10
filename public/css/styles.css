@@ -20,3 +20,14 @@ p{
 .div_main_card {
         display: inline-block;
 }
+
+
+.navbar-toggler{
+    width: 39px;
+    height: 40px;
+
+    padding: auto;
+    
+    color: var(--main-color-rosa);
+}
+
