@@ -47,6 +47,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: flex;
 }
 
+
 .formSearch {
     border:solid 0px #EFEFEF;
     border-radius: 8px 0px 0px 8px ;
@@ -96,7 +97,25 @@ i#menuBurguer:hover {
     border: solid 1px #ff66c44b;
 }
 
+i#menuBurguerMobile {
+    display: block;
+    padding: 8px;
+    margin: auto;
+    color: white;
+    border: solid 1px #d8d8d841;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*Menu burguer mobile*/
+i#menuBurguerMobile {
+    display: none;
+}
+
 /*Menu dropwn burguer*/
+.dropdown-menu{
+    padding: 0px;
+}
 .dropdown-menu li{
     padding: 8px;
     cursor: pointer;
@@ -109,6 +128,7 @@ i#menuBurguer:hover {
 
 .dropdown-menu li:hover{
     color: white;
+    border-radius: 4px;
     background-color: var(--main-color-rosa);
     text-decoration: none;
 }
@@ -125,7 +145,26 @@ i#menuBurguer:hover {
     .divBusca {
         display: none;
     }
-}
+
+    i#menuBurguer {
+        display: none;
+    }
+
+    i#menuBurguerMobile {
+        display: flex;
+        padding: 8px;
+        margin: auto;
+        color: white;
+        border: solid 1px #d8d8d841;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    }
 
 
 /* caixa do topo */
@@ -171,5 +210,7 @@ i#menuBurguer:hover {
 
 /* Div card, css externo */
 .div_main_card {
+    text-align: center;
+    margin: auto;
     display: inline-block;
 }
