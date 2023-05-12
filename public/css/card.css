@@ -14,16 +14,26 @@
     display: inline-block;
 }
 
-.img_card{
+.content_image_card{
     width: 156px; 
     height: 90px;
     font-size: 10px;
+    border-radius: 8px;
+    text-transform: lowercase;
+    margin-bottom: 15px;
+}
+
+.image_card {
+    width: 156px;
+    border-radius: 8px;
+    margin-bottom: 3px;
 }
 
 .title_account {
     margin: 16px;
     font-weight: bold;
     font-size: 16px;
+    text-transform: uppercase;
 }
 
 .card_price {

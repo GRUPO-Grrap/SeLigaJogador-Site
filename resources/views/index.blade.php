@@ -14,6 +14,10 @@
           <a href="/events/announce"><button class="content_top_button">Anunciar</button></a>
         </div>
     </section>
+    
+    <section class="carousel">
+
+    </section>
 
     <div class="div_main_card ">
         @include('layouts._partials.card')

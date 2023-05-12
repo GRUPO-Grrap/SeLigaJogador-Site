@@ -1,8 +1,8 @@
 @foreach($adverts as $advert)
    <div class="card" >
       
-      <div class="img_card">
-         <img src="img/announcement/{{ $advert->image }}" alt="{{ $advert->title }}">
+      <div class="content_image_card">
+         <img class="image_card" src="img/announcement/{{ $advert->image }}" alt="{{ $advert->title }}">
          <span>Conta criada em: {{ date('Y'), strtotime($advert->date) }}</span>
       </div>
 
