@@ -30,7 +30,21 @@ class UserController extends Controller
         $advert->preco = $request->preco;
         $advert->category = $request->category;
         $advert->description = $request->description;
-        /* $advert->description = $request->description; img */
+
+        // image
+        if($request->hasFile('image') && $request->file('image')->isValid()) {
+
+            $requestImage = $request->image;
+            
+            $extension = $requestImage->extension();
+
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+
+            $request->image->move(public_path('img/announcement'), $imageName);
+
+            $advert->image = $imageName;
+
+        }
 
         /* salvando dados */
         $advert->save();

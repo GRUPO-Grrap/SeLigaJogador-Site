@@ -26,7 +26,7 @@
     </div>
 
     <div>
-        <form action="/events" method="POST" style="border: solid 2px #FF66C4">
+        <form action="/events" method="POST" enctype="multipart/form-data" style="border: solid 2px #FF66C4">
             @csrf
             <div>
                 <span>icone aqui</span>
@@ -66,11 +66,11 @@
                 <textarea name="description" id="description"></textarea>
             </div>
 
-{{--             <div>
-                <h2>Imagens</h2>
-                <input type="file" name="" id="">
+            <div>
+                <label for="image">Imagens</label>
+                <input type="file" name="image" id="image">
                 <span>observação</span>
-            </div> --}}
+            </div>
 
             <div>
                 <h2>Contrato</h2>

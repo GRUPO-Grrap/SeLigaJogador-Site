@@ -2,7 +2,7 @@
    <div class="card" >
       
       <div class="img_card">
-         <img src="img/img_card.png" alt="#">
+         <img src="img/announcement/{{ $advert->image }}" alt="{{ $advert->title }}">
          <span>Conta criada em: {{ date('Y'), strtotime($advert->date) }}</span>
       </div>
 
