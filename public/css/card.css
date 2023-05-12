@@ -25,6 +25,7 @@
 
 .image_card {
     width: 156px;
+    height: 90px;
     border-radius: 8px;
     margin-bottom: 3px;
 }
