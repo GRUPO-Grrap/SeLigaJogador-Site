@@ -20,21 +20,28 @@
     
 
   <!--Navbar menu-->
-    <div class="dropdown">
+    <div id="drop" class="dropdown">
       <i id="menuBurguer" class="material-icons dropdown"  data-bs-toggle="dropdown" aria-expanded="false">menu</i>
         <ul class="dropdown-menu">
           <li><a dropdown-item href="#">Entrar</a></li>
           <li><a dropdown-item href="#">Cadastrar</a></li>
         </ul>
-      
     </div>
 
     <!--Navbar menu Mobile responsive-->
-    <div class="dropleft">
+    <div id="dropMobile"  class="dropleft">
       <i id="menuBurguerMobile" class="material-icons dropdown"  data-bs-toggle="dropdown" aria-expanded="false">menu</i>
         <ul id="boxMobile" class="dropdown-menu">
           <li><a dropdown-item href="#">Entrar</a></li>
           <li><a dropdown-item href="#">Cadastrar</a></li>
+          <li>
+              <div class="divBuscaMobile">
+                <input class="formSearchMobile" type="search" placeholder=" Pesquisar..." aria-label="Search">
+                <button class="btnSearchMobile" type="submit"> 
+                  <i id="search" class="material-icons">search</i>
+                </button>
+              </div>
+          </li>
         </ul> 
     </div>
     
