@@ -19,7 +19,7 @@ return new class extends Migration
             $table->double("preco", 8, 2);
             $table->string("category");
             $table->text("description");
-            /* $table->string("image"); */
+            $table->string("image");
         });
     }
 
