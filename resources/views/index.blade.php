@@ -14,18 +14,23 @@
           <a href="/events/announce"><button class="content_top_button">Anunciar</button></a>
         </div>
     </section>
-
+    
     <section class="carousel">
 
     </section>
 
-    <div class="div_main_card ">
-        @include('layouts._partials.card')
-        @if(count($adverts) == 0)
-            <p>Não tem contas!</p>
-        @endif
-    </div>
+        <div class="div_main_card ">
+            <h2 class="titulo_vendas">Vendas</h2>
+            @include('layouts._partials.card')
+            @if(count($adverts) == 0)
+                <p>Não tem contas!</p>
+            @endif
+        </div>
+    </main>
     
-    <!--Aqui está o footer e o navbar-->
-    @include('layouts._partials.footer')
+    <!--Aqui está o footer-->
+    <footer>
+        @include('layouts._partials.footer')
+    </footer>
+    
 @endsection

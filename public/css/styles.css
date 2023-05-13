@@ -1,14 +1,13 @@
 /* global */
 * {
     font-family: 'Roboto';
-    
 }
 
 /* color variables */
 :root{
     --main-color-rosa: #FF66C4;
     --main-color-azul: #1A0D42;
-    --main-color-azul-titulo: #1a0d42a1;
+    --main-color-azul-titulo: #1a0d42d8;
     --main-color-roxo: #5A3EF7;
 }
 
@@ -24,6 +23,7 @@ p{
     padding: .8rem 10rem .8rem 10rem;
     display: flex;
     flex-direction: row;
+    height: 72px;
 }
 
 /*Navbar Search config*/
@@ -47,8 +47,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: flex;
 }
 
+
 .formSearch {
-    border:solid 0px #EFEFEF;
+    border: solid 0px transparent;
     border-radius: 8px 0px 0px 8px ;
     padding-left: 0.313rem;
     font-size: 16px;
@@ -96,7 +97,25 @@ i#menuBurguer:hover {
     border: solid 1px #ff66c44b;
 }
 
+i#menuBurguerMobile {
+    display: block;
+    padding: 8px;
+    margin: auto;
+    color: white;
+    border: solid 1px #d8d8d841;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*Menu burguer mobile*/
+i#menuBurguerMobile {
+    display: none;
+}
+
 /*Menu dropwn burguer*/
+.dropdown-menu{
+    padding: 0px;
+}
 .dropdown-menu li{
     padding: 8px;
     cursor: pointer;
@@ -109,9 +128,16 @@ i#menuBurguer:hover {
 
 .dropdown-menu li:hover{
     color: white;
+    border-radius: 4px;
     background-color: var(--main-color-rosa);
     text-decoration: none;
 }
+
+div#dropMobile{
+    display: none;
+}
+
+
 
 /*Navbar response*/
 @media only screen and (max-width: 1200px)  {
@@ -125,14 +151,78 @@ i#menuBurguer:hover {
     .divBusca {
         display: none;
     }
-}
+    div#drop{
+        display: none;
+    }
+
+    i#menuBurguer {
+        display: none;
+    }
+
+    div#dropMobile{
+        display: block;
+    }
+
+    i#menuBurguerMobile {
+        display: flex;
+        padding: 8px;
+        margin: auto;
+        color: white;
+        border: solid 1px #d8d8d841;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    .divBuscaMobile {
+        background-color: #EFEFEF;
+        border:solid 0px var(--main-color-azul-titulo);
+        border-radius: 8px;
+        width: 100%;
+        height: 2.5rem;
+    
+        margin: auto;
+        display: flex;
+    }
+
+   
+
+    .formSearchMobile {
+        border:solid 1px var(--main-color-azul-titulo);
+        border-radius: 8px 0px 0px 8px ;
+        padding-left: 0.313rem;
+        font-size: 16px;
+        width: 90%;
+        height:2.5rem;
+    }
+    .btnSearchMobile {
+        border:none;
+        border-radius: 0px 8px 8px 0px ;
+        font-weight:bold;
+        background:#b4b4b4;
+        height: 2.5rem;
+        width: 10%;
+        padding: auto;
+        
+        
+    
+    }
+
+    .btnSearchMobile:hover {
+        background-color: var(--main-color-azul);
+    }
+
+    }
 
 
 /* caixa do topo */
 
 .content_top {
     width: 100%;
-    min-height: 255px;
+    min-height: 360px;
     background-image: linear-gradient(to bottom,
     rgba(255, 102, 196, 0.192),
     rgba(0, 0, 255, 0.01)), url("../img/Carrocel_imgcapa.png");
@@ -152,7 +242,7 @@ i#menuBurguer:hover {
 }
 
 .content_top_subtitle {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .content_top_button {
@@ -162,14 +252,43 @@ i#menuBurguer:hover {
     border: solid 2px #FF66C4;
     border-radius: 8px;
     background-color: #FF66C4;
+    margin-top: 16px;
     padding: 8px;
 
     font-size: 18px;
     color: #FFF;
 }
 
+.content_top_button:hover {
+    border: solid 2px #ff71c8;
+    background-color: #ff71c8;
+    color: #f0f0f0;
+}
+
+/*mobile responsive image*/
+@media only screen and (max-width: 950px) {
+    .content_top_title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    .content_top_subtitle {
+        font-size: 1rem;
+    }
+    
+    
+}
 
 /* Div card, css externo */
+.titulo_vendas {
+    text-align: left;
+    font-weight: bold;
+    color: var(--main-color-azul-titulo);
+    margin: 0 10px 0 10px;
+    width: 100%;
+}
 .div_main_card {
+    text-align: center;
+    margin: auto;
     display: inline-block;
 }
