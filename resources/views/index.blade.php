@@ -14,7 +14,7 @@
           <a href="/events/announce"><button class="content_top_button">Anunciar</button></a>
         </div>
     </section>
-    
+
     <section class="carousel">
 
     </section>
