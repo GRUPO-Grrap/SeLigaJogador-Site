@@ -20,6 +20,7 @@
         {{-- css --}}
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="/css/card.css">
+        <link rel="stylesheet" href="/css/card_category.css">
     </head>
     <body class="antialiased">
         @yield('content')

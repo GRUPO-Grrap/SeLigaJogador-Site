@@ -23,6 +23,7 @@ p{
     padding: .8rem 10rem .8rem 10rem;
     display: flex;
     flex-direction: row;
+    height: 72px;
 }
 
 /*Navbar Search config*/
@@ -221,7 +222,7 @@ div#dropMobile{
 
 .content_top {
     width: 100%;
-    min-height: 260px;
+    min-height: 360px;
     background-image: linear-gradient(to bottom,
     rgba(255, 102, 196, 0.192),
     rgba(0, 0, 255, 0.01)), url("../img/Carrocel_imgcapa.png");
@@ -277,31 +278,6 @@ div#dropMobile{
     
     
 }
-
-
-/*div categoria*/
-.section_categorty{
-    margin: auto;
-    
-}
-
-.card_category{
-    display: inline-block;
-    text-align: center;
-    margin: 8px;
-}
-
-.img_category {
-    background-color: gray;
-    width: 136px;
-    height: 174px;
-    border-radius: 8px;
-    
-}
-
-
-
-
 
 /* Div card, css externo */
 .titulo_vendas {

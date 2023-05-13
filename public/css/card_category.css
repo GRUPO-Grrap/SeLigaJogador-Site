@@ -1,0 +1,32 @@
+/*Style to the card*/
+.category {
+    text-align: center;
+    margin-top: 16px;
+    display: block;
+    font-weight: bold;
+}
+
+.card_category{
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+
+    margin: 4px;
+    
+}
+.img_category {
+    width: 156px;   
+    height: 194px;
+}
+
+.titulo_category {
+    font-weight: bold;
+    color: var(--main-color-azul-titulo);
+    margin: 0 10px 0 10px;
+    width: 100%;
+}
+
+
+
+
