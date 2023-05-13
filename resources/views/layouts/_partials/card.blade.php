@@ -5,7 +5,6 @@
          <span>Conta criada em: {{ date('Y'), strtotime($advert->date) }}</span>
       </div>
 
-      <div class="titulo">
          <h4 class="title_account"> {{$advert->title}} </h4>
       </div>
 
