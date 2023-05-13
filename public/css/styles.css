@@ -1,14 +1,13 @@
 /* global */
 * {
     font-family: 'Roboto';
-    
 }
 
 /* color variables */
 :root{
     --main-color-rosa: #FF66C4;
     --main-color-azul: #1A0D42;
-    --main-color-azul-titulo: #1a0d42a1;
+    --main-color-azul-titulo: #1a0d42d8;
     --main-color-roxo: #5A3EF7;
 }
 
@@ -24,6 +23,7 @@ p{
     padding: .8rem 10rem .8rem 10rem;
     display: flex;
     flex-direction: row;
+    height: 72px;
 }
 
 /*Navbar Search config*/
@@ -222,7 +222,7 @@ div#dropMobile{
 
 .content_top {
     width: 100%;
-    min-height: 260px;
+    min-height: 360px;
     background-image: linear-gradient(to bottom,
     rgba(255, 102, 196, 0.192),
     rgba(0, 0, 255, 0.01)), url("../img/Carrocel_imgcapa.png");
@@ -279,10 +279,14 @@ div#dropMobile{
     
 }
 
-
-
-
 /* Div card, css externo */
+.titulo_vendas {
+    text-align: left;
+    font-weight: bold;
+    color: var(--main-color-azul-titulo);
+    margin: 0 10px 0 10px;
+    width: 100%;
+}
 .div_main_card {
     text-align: center;
     margin: auto;

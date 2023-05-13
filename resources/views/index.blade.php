@@ -18,11 +18,15 @@
             </div>
         </section>
     
-        <section class="carousel">
+        <div class="category">
+            <h2 class="titulo_category">Categorias populares</h2>
             @include('layouts._partials.category')
-        </section>
-    
+        </div>
+        
+
+
         <div class="div_main_card ">
+            <h2 class="titulo_vendas">Vendas</h2>
             @include('layouts._partials.card')
             @if(count($adverts) == 0)
                 <p>Não tem contas!</p>
