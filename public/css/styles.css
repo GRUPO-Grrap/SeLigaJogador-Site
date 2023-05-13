@@ -1,14 +1,13 @@
 /* global */
 * {
     font-family: 'Roboto';
-    
 }
 
 /* color variables */
 :root{
     --main-color-rosa: #FF66C4;
     --main-color-azul: #1A0D42;
-    --main-color-azul-titulo: #1a0d42a1;
+    --main-color-azul-titulo: #1a0d42d8;
     --main-color-roxo: #5A3EF7;
 }
 
@@ -280,9 +279,38 @@ div#dropMobile{
 }
 
 
+/*div categoria*/
+.section_categorty{
+    margin: auto;
+    
+}
+
+.card_category{
+    display: inline-block;
+    text-align: center;
+    margin: 8px;
+}
+
+.img_category {
+    background-color: gray;
+    width: 136px;
+    height: 174px;
+    border-radius: 8px;
+    
+}
+
+
+
 
 
 /* Div card, css externo */
+.titulo_vendas {
+    text-align: left;
+    font-weight: bold;
+    color: var(--main-color-azul-titulo);
+    margin: 0 10px 0 10px;
+    width: 100%;
+}
 .div_main_card {
     text-align: center;
     margin: auto;
