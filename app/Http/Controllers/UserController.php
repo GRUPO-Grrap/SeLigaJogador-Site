@@ -10,10 +10,19 @@ class UserController extends Controller
 {
     public function index() {
 
-        // puxanto todos os dados
-        $adverts = Advert::all();
+        $search = request('search');
 
-        return view('index',['adverts' => $adverts]);
+        if($search) {
+
+            $adverts = Advert::where([
+                ['title', 'like', '%'.$search.'%']
+            ])->get();
+
+        } else {
+            $adverts = Advert::all(); // puxanto todos os dados
+        }
+
+        return view('index',['adverts' => $adverts, 'search' => $search]);
 
     }
 

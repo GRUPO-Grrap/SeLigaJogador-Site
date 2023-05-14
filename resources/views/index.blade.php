@@ -17,7 +17,7 @@
               <a href="/events/announce"><button class="content_top_button">Anunciar</button></a>
             </div>
         </section>
-    
+        
         <div class="category">
             <h2 class="titulo_category">Categorias populares</h2>
             <div class="carousel">
@@ -25,10 +25,20 @@
             </div>
         </div>
 
+        <div>
+            @if($search)
+                <h3>você buscou por: {{ $search }}</h3>
+            @else
+                <h3>as melhores contas aqui!</h3>
+            @endif
+        </div>
+
         <div class="div_main_card ">
             <h2 class="titulo_vendas">Vendas</h2>
             @include('layouts._partials.card')
-            @if(count($adverts) == 0)
+            @if(count($adverts) == 0 && $search)
+                <p>Não foi possível encotrar nenhum evento com {{ $search }} <a href="/">Olhar todos!</a> </p>
+            @elseif(count($adverts) == 0)
                 <p>Não tem contas!</p>
             @endif
         </div>
