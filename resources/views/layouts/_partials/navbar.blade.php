@@ -9,9 +9,9 @@
   
       
   <!--Navbar form-->
-  <form action="#">
+  <form action="/" method="GET">
     <div class="divBusca ">
-      <input class="formSearch" type="search" placeholder=" Pesquisar..." aria-label="Search">
+      <input class="formSearch" type="text" id="search" name="search" placeholder=" Pesquisar..." aria-label="Search">
       <button class="btnSearch" type="submit"> 
         <i id="search" class="material-icons">search</i>
       </button>
