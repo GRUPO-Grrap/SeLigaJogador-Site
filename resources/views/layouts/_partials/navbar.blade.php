@@ -35,12 +35,14 @@
           <li><a dropdown-item href="#">Entrar</a></li>
           <li><a dropdown-item href="#">Cadastrar</a></li>
           <li>
+            <form action="/" method="GET">
               <div class="divBuscaMobile">
                 <input class="formSearchMobile" type="search" placeholder=" Pesquisar..." aria-label="Search">
                 <button class="btnSearchMobile" type="submit"> 
                   <i id="search" class="material-icons">search</i>
                 </button>
               </div>
+            </form>
           </li>
         </ul> 
     </div>
