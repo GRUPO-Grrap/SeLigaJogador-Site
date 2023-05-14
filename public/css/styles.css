@@ -11,6 +11,9 @@
     --main-color-roxo: #5A3EF7;
 }
 
+main{
+   margin: 0rem 11rem 0rem 11rem;
+}
 
 p{
     margin: 0;
@@ -20,7 +23,7 @@ p{
 
 /*Navbar config*/
 .navbar {
-    padding: .8rem 10rem .8rem 10rem;
+    padding: .8rem 11rem .8rem 11rem;
     display: flex;
     flex-direction: row;
     height: 72px;
@@ -141,6 +144,10 @@ div#dropMobile{
 
 /*Navbar response*/
 @media only screen and (max-width: 1200px)  {
+
+    main{
+        margin: 0 6px 0 4px;
+     }
     .navbar {
         padding: .8rem .5rem .8rem .5rem;
         margin: auto;
@@ -215,6 +222,10 @@ div#dropMobile{
         background-color: var(--main-color-azul);
     }
 
+    .div_main_card { 
+        text-align: center;
+    }
+
     }
 
 
@@ -279,16 +290,38 @@ div#dropMobile{
     
 }
 
-/* Div card, css externo */
-.titulo_vendas {
+/* CSS at the titles and external class*/
+.title_result {
+   text-align: left;
+   padding: 24px 0 24px 8px;
+   color:  var(--main-color-rosa);
+   text-transform: uppercase;
+}
+
+.title_result h3 {
+    font-size: 24px;
+ }
+
+.title_category {
     text-align: left;
     font-weight: bold;
     color: var(--main-color-azul-titulo);
-    margin: 0 10px 0 10px;
+    margin: 16px 10px 16px 10px;
+    width: 100%;
+}
+
+.title_vendas {
+    text-align: left;
+    font-weight: bold;
+    color: var(--main-color-azul-titulo);
+    margin: 0 10px 16px 10px;
     width: 100%;
 }
 .div_main_card {
-    text-align: center;
-    margin: auto;
+    text-align: left;
+    margin: 0 0 24px 0;
     display: inline-block;
 }
+
+/*Style at the footer*/
+
