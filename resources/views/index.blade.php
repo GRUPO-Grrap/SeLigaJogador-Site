@@ -19,8 +19,12 @@
         </section>
     
         <div class="category">
-            <h2 class="titulo_category">Categorias populares</h2>
-            @include('layouts._partials.category')
+            <i class="fa-solid fa-angle-left"></i>
+                <h2 class="titulo_category">Categorias populares</h2>
+                <div class="carousel">
+                    @include('layouts._partials.category')
+                </div>
+            <i class="fa-solid fa-angle-right"></i>
         </div>
 
         <div class="div_main_card ">
