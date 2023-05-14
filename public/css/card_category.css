@@ -4,6 +4,9 @@
     margin-top: 16px;
     display: block;
     font-weight: bold;
+    
+    /* max-width: 1750px; */
+    position: relative;
 }
 
 .card_category{
@@ -13,8 +16,11 @@
     display: inline-block;
 
     margin: 4px;
-    
+
+    object-fit: cover;
+    cursor: pointer;
 }
+
 .img_category {
     width: 156px;   
     height: 194px;
@@ -24,9 +30,22 @@
     font-weight: bold;
     color: var(--main-color-azul-titulo);
     margin: 0 10px 0 10px;
-    width: 100%;
+    
 }
 
+.carousel {
+    white-space: nowrap;
+    overflow: hidden;
+}
 
+.carousel img:first-child {
+    margin-left: 0px;
+}
 
-
+ i {
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    line-height: 46px;
+    font-size: 1.2rem;
+}
