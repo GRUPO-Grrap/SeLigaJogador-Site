@@ -61,4 +61,13 @@ class UserController extends Controller
         return redirect('/');
 
     }
+
+    // show
+    public function show($id) {
+
+        $advert = Advert::findOrFail($id);
+
+        return view('events.show', ['advert' => $advert]);
+
+    }
 }

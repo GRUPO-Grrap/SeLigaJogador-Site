@@ -27,8 +27,8 @@
         <div class="title_result">
             @if($search)
                 <h3>você buscou por: {{ $search }}</h3>
-            @else
-                
+            @else        
+               
             @endif
         </div>
 
