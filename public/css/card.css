@@ -127,6 +127,7 @@ div.titulo {
 
         display: inline-block;
     }
+
     span {
         text-transform: lowercase;
         font-size: 10px;
@@ -177,5 +178,82 @@ div.titulo {
         margin-top: 4px;
     }
 
+}
+
+@media only screen and (max-width: 478px) {
+    .div_main_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_vendas {
+        text-align: center;
+    }
+
+    .card {
+        width: 280px;   
+        height: 312px;
+        padding: 8px;
+        margin: 8px 0px 0px 8px;
+    
+        border: solid 2px var(--main-color-rosa);
+        border-radius: 8px;
+        text-align: center;
+        align-items: center;
+        color: var(--main-color-azul);
+    
+        display: inline-block;
+    }
+
+    span {
+        text-transform: lowercase;
+        font-size: small;
+    }
+
+    .image_card {
+        width: 252px;
+        height: 152px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    
+    div.titulo {
+        width: 100%;
+        height: 48px;
+        margin-bottom: 8px;
+    }
+    
+    .title_account {
+        margin: 8px;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    
+    .card_price {
+        margin: auto;
+    
+        width: 108px;
+        height: 28px;
+    
+        color:  var(--main-color-rosa);
+        font-weight: bolder;
+        font-size: 16px;
+    
+        border: solid 2px var(--main-color-rosa);
+        border-radius: 8px;
+    
+        align-items: center;
+        text-align: center;
+    
+        display: block;
+    }
+    
+    .name_user {
+        font-size: 16px;
+        display: block;
+        margin-top: 8px;
+    }    
     
 }
