@@ -325,3 +325,56 @@ div#dropMobile{
 
 /*Style at the footer*/
 
+.footer{
+    background-color: #222222;
+    color: #ffffff;
+    padding: 2rem 11rem 1rem 11rem;
+}
+
+.title_about{
+    font-weight: bold; 
+}
+
+
+.div_about{
+    display: inline-block;
+    margin-right: 64px;
+}
+
+.div_about img{
+   margin: 0px 16px 90px 0;
+}
+
+
+.text_about{
+    display: inline-block;
+    color: #b4b4b4;
+    width: 470px;
+}
+
+.quick_access {
+    margin-right: 64px;
+}
+
+.title_quick_access{
+    font-weight: bold; 
+}
+
+.quick_access a {
+    color: #b4b4b4;
+    text-decoration: none;
+}
+ 
+.copyright {
+    width: 100%;
+    text-align: center;
+    color: #b4b4b4;
+    text-decoration: none;
+}
+
+.copyright a {
+    text-align: center;
+    color: #b4b4b4;
+    text-decoration: none;
+}
+
