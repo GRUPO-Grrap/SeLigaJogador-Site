@@ -32,7 +32,7 @@
             @endif
         </div>
 
-        <div class="div_main_card ">
+        <div class="div_main_card">
             <h2 class="title_vendas">Vendas</h2>
             @include('layouts._partials.card')
             @if(count($adverts) == 0 && $search)
