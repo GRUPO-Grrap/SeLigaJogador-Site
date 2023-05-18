@@ -1,80 +1,87 @@
 <!-- Footer -->
-<footer class="footer navbar-fixed-bottom">
-  <div class="container box-footer">
-    <div class="d-flex">
-
-      <div class="footer_about">
-        <h5 class="title_about">SOBRE</h5>
-        <div class="div_about">
-          <img src="img/logo_footer.svg" style="width: 64px; height: 58px;" alt="logo Se Liga Jogador">
-            <p class="text_about">
-              Somos a solução para o mercado digital, disponibilizando uma
-              plataforma moderna que permite que o comprador receba pelo
-              produto / serviço desejado, e que o vendedor receba para sua venda.
-              Tudo isso com praticidade e segurança.
-            </p>
+<footer class="text-center text-lg-start text-muted pt-1">
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4" style="color: white">
+            <img class="m-2" src="img/logo_footer.svg" style="width: 32px; height: 32px;" alt="Logo Se Liga Jogador branca">Se Liga Jogador
+          </h6>
+          <p class="text-justify">
+            Somos a solução para o mercado digital, disponibilizando uma
+            plataforma moderna que permite que o comprador receba pelo
+            produto / serviço desejado, e que o vendedor receba para sua venda.
+            Tudo isso com praticidade e segurança.
+          </p>
         </div>
-      </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Acesso rápido
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Anunciar</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Perguntas Frequentes</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Categorias</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Central de ajuda</a>
+          </p>
+        </div>
 
-      <div class="quick_access">
-        <h5 class="title_quick_access">ACESSO RÁPIDO</h5>
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="#!">Anunciar</a>
-          </li>
-          <li>
-            <a href="#!">Perguntas frequentes</a>
-          </li>
-          <li>
-            <a href="#!">Categorias</a>
-          </li>
-          <li>
-            <a href="#!">Central de Ajuda</a>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="quick_access">
-        <h5 class="title_quick_access">ACESSO RÁPIDO</h5>
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="#!">Anunciar</a>
-          </li>
-          <li>
-            <a href="#!">Perguntas frequentes</a>
-          </li>
-          <li>
-            <a href="#!">Categorias</a>
-          </li>
-          <li>
-            <a href="#!">Central de Ajuda</a>
-          </li>
-        </ul>
-      </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Como Funciona
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Saiba mais</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vantagens</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Tarifas e prazos</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Formas de pagamentos</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Verificador de contas</a>
+          </p>
+        </div>
 
-      <div class="quick_access">
-        <h5 class="title_quick_access">ACESSO RÁPIDO</h5>
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="#!">Anunciar</a>
-          </li>
-          <li>
-            <a href="#!">Perguntas frequentes</a>
-          </li>
-          <li>
-            <a href="#!">Categorias</a>
-          </li>
-          <li>
-            <a href="#!">Central de Ajuda</a>
-          </li>
-        </ul>
-      </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Institucional
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Termos de uso</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Politica de privacidade</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Politica de reembolso</a>
+          </p>
+        </div>
       
+      </div>
+      <!-- Grid row -->
     </div>
-    <!-- Copyright -->
-  <div class="copyright">
-    © 2023 Copyright:
-    <a href="#">Se Liga Jogador | Todos os diteiros reservados</a>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="copy text-center p-3 " style="background-color: #222222; color: #b2b2b2;">
+    ©
+    <a class="text-reset" href="#">SELIGA JOGADOR 2023 | TODOS OS DIREITOS RESERVADOS</a>
   </div>
+  <!-- Copyright -->
 </footer>
-  <!-- Footer -->
+<!-- Footer -->
