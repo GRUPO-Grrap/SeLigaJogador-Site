@@ -6,7 +6,7 @@
       <div class="row mt-3">
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <h6 class="text-uppercase fw-bold mb-4" style="color: white">
-            <img class="m-2" src="img/logo_footer.svg" style="width: 32px; height: 32px;" alt="Logo Se Liga Jogador branca">Se Liga Jogador
+            <img class="m-2" src="/img/logo_footer.svg" style="width: 32px; height: 32px;" alt="Logo Se Liga Jogador branca">Se Liga Jogador
           </h6>
           <p class="text-justify">
             Somos a solução para o mercado digital, disponibilizando uma

@@ -21,9 +21,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
         {{-- css --}}
-        <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="/css/card.css">
-        <link rel="stylesheet" href="/css/card_category.css">
+        <link rel="stylesheet" href="/css/announce.css">
+        <link rel="stylesheet" href="/css/show.css">
+        <link rel="stylesheet" href="/css/styles.css ">
+
         
     </head>
     </head>

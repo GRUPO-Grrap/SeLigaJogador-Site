@@ -5,30 +5,33 @@
 @section('contentSecondary')
 
     <header>
-        @include('layouts._partials.navbar_secundary')
+        @include('layouts._partials.navbar')
     </header>
 
     <main>
-        <div>
-            <img class="m-5" style="width: 500px; height: 300px;" src="/img/announcement/4821515a31ada7963842975039874675.jpg" alt="">
+        <div class="div_img">
+            <img class="img_product"  src="/img/announcement/{{ $advert->image }}" alt="">
+            <span>Conta criada em: {{ date('Y'), strtotime($advert->date) }}</span>
         </div>
 
-        <div>
-            <h1>{{ $advert->title }}</h1>
-            <h4>Preço R$200</h4>
+        <div class="info">
+            <h1 class="title">{{ $advert->title }}</h1>
+            <h4 class="price">R${{ $advert->preco }}</h4>
         </div>
 
-        <div>
+        <div class="description">
+            <h4>Drescrição da conta</h4>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo nesciunt, 
-                aliquid odit aperiam sapiente. Eaque quod vel labore dolor atque architecto ab 
-                ex omnis recusandae dicta? Dolores, accusamus id?
+                {{ $advert->description }}
             </p>
         </div>
         <div>
-            <button class="btn btn-success">Comprar</button>
+            <button class="btn_buy">Comprar</button>
         </div>
        
     </main>
 
+    <footer>
+        @include('layouts._partials.footer')
+    </footer>
 @endsection
