@@ -1,0 +1,87 @@
+/* global */
+* {
+    font-family: 'Roboto';
+}
+
+/* color variables */
+:root{
+    --main-color-rosa: #FF66C4;
+    --main-color-azul: #1A0D42;
+    --main-color-azul-titulo: #1a0d42d8;
+    --main-color-roxo: #5A3EF7;
+}
+
+main{
+   margin: 0rem 11rem 0rem 11rem;
+}
+
+p{
+    margin: 0;
+    align-items: center;
+}
+
+
+/*Navbar config*/
+.navbar {
+    padding: .8rem 11rem .8rem 11rem;
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+}
+
+.navbar-btn{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: .8rem;
+    
+}
+
+.btn_back  h6{
+    margin-left: .4rem;
+   font-size: 24px;
+}
+
+.btn_back  h6 i{
+    width: 24px;
+    height: 24px;
+
+ }
+
+ .btn_back  a:hover{
+    text-decoration: none;
+    text-align: center;
+    color: var(--main-color-rosa);
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*Navbar response*/
+@media only screen and (max-width: 1200px)  {
+
+    main{
+        margin: 0 6px 0 4px;
+     }
+    .navbar {
+        padding: .8rem .5rem .8rem .5rem;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+
+/*Main box*/
+.announce{
+    padding: 2rem;
+    border: solid 2px var(--main-color-rosa);
+    border-radius: 8px;
+}
+.nav-itens{
+    margin-top: 5rem;
+}
+

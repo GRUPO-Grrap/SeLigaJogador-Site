@@ -1,0 +1,180 @@
+/* global */
+* {
+    font-family: 'Roboto';
+}
+
+/* color variables */
+:root{
+    --main-color-rosa: #FF66C4;
+    --main-color-azul: #1A0D42;
+    --main-color-azul-titulo: #1a0d42d8;
+    --main-color-roxo: #5A3EF7;
+}
+
+main{
+   margin: 0rem 11rem 0rem 11rem;
+}
+
+p{
+    margin: 0;
+    align-items: center;
+}
+
+
+/*Navbar config*/
+.navbar {
+    padding: .8rem 11rem .8rem 11rem;
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+}
+
+.navbar-btn{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: .8rem;
+    
+}
+
+.btn_back  h6{
+    margin-left: .4rem;
+   font-size: 24px;
+}
+
+.btn_back  h6 i{
+    width: 24px;
+    height: 24px;
+
+ }
+
+ .btn_back  a:hover{
+    text-decoration: none;
+    text-align: center;
+    color: var(--main-color-rosa);
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*Navbar response*/
+@media only screen and (max-width: 1200px)  {
+
+    main{
+        margin: 0 6px 0 4px;
+     }
+    .navbar {
+        padding: .8rem .5rem .8rem .5rem;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+
+/*image configurantion*/
+.div_img {
+    text-align: center;
+}
+
+.div_img span{
+    color: #acacac;
+}
+
+.img_product {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    
+    box-shadow: #222222;
+    margin-top: 5rem;
+}
+
+/*description configurantion*/
+.info {
+    margin-top: .8rem;
+    word-wrap: break-word;
+}
+.title {
+    font-weight: bold;
+}
+.price {
+    color: var(--main-color-rosa);
+    font-weight: bold;
+}
+
+.description {
+    margin: .8rem 0 1rem 0;
+}
+
+.description h4{
+    font-weight: 500;
+}
+
+.btn_buy {
+    color: white;
+    background-color: var(--main-color-rosa);
+
+    font-weight: 600;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    margin-bottom: 2rem;
+    padding: .8rem;
+    width: 100%;
+
+    box-shadow: #222222;
+}
+
+.btn_buy:hover {
+    color: white;
+    background-color: #ff4dbb;
+
+}
+
+@media only screen and (max-width: 1360px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 830px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 830px) {
+    .img_product {
+        height: 300px;
+    }
+}
+
+
+
+/*Style at the footer*/
+footer {
+    background-color: #222222;
+}
+footer p {
+    color: #b2b2b2;
+}
+
+footer h6 {
+    color: #ffffff;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .copy {
+    border-top: 0.5px solid #b2b2b2;
+}
