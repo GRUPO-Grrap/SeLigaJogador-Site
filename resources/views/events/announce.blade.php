@@ -34,24 +34,36 @@
             <div>
                 <form action="/events" method="POST" enctype="multipart/form-data">
                     @csrf
+
+                    <!--Title-->
                     <div>
-                        
                         <h2><i class="material-icons">campaign</i> Anúncio</h2>
-                        <label for="title">Escolha um título para seu anúncio:</label>
-                        <input type="text" id="title" name="title" placeholder="Digite aqui o nome do seu anuncio">
-                        <span>Por exemplo: conta Free Fire, rank da sua conta, nome do jogador atribuição</span>
+                        <label class="form-label" for="title">Escolha um título para seu anúncio:</label>
+                        <div class="input-group input-group-lg mb-1">
+                            <input type="text" class="form-control" id="title" name="title"
+                            placeholder="Digite aqui o nome do seu anuncio" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                        </div>
+                        <span>Por exemplo: conta Free Fire, rank da sua conta, nome do jogador ou atribuição.</span>
                     </div>
-                    <div>
-                        <h2>Ano de criação da conta</h2>
-                        <label for="date">isira a data de criação da conta</label>
-                        <input type="date" id="date" name="date" placeholder="R$0,00">
+                    
+                    <!--Date-->
+                    <div class="mt-3">
+                        <h2><i class="material-icons">calendar_month</i> Ano de criação da conta</h2>
+                        <label for="date">Insira a data de criação da conta</label>
+                        <div  class="input-group input-group-lg mb-1">
+                            <input type="date" class="form-control" id="date" name="date" placeholder="R$0,00">
+                        </div>
                     </div>
-        
-                    <div>
-                        <h2>Valor</h2>
+                        
+                    <!--Price-->
+                    <div class="mt-3">
+                        <h2><i class="material-icons">payments</i> Valor</h2>
                         <label for="preco">Valor do anúncio</label>
-                        <input type="number" id="preco" name="preco" placeholder="R$0,00">
+                        <div class="input-group input-group-lg mb-1">
+                            <input type="number" class="form-control" id="preco" name="preco" placeholder="R$0,00">
+                        </div>
                     </div>
+                    
         
                     <div>
                         <h2>Categoria</h2>

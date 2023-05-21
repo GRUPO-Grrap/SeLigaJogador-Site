@@ -9,6 +9,7 @@
     --main-color-azul: #1A0D42;
     --main-color-azul-titulo: #1a0d42d8;
     --main-color-roxo: #5A3EF7;
+    --main-color-gray: #ADADAD;
 }
 
 main{
@@ -78,6 +79,7 @@ p{
 /*Main box*/
 .announce{
     padding: 2rem;
+    margin-bottom: 2rem;
     border: solid 2px var(--main-color-rosa);
     border-radius: 8px;
 }
@@ -85,3 +87,26 @@ p{
     margin-top: 5rem;
 }
 
+.announce h2 {
+    font-weight: 900;
+    color: var(--main-color-azul);
+}
+
+.announce label {
+    font-size: 1.5rem;
+    color: var(--main-color-azul);
+}
+
+.announce span {
+    color: var(--main-color-gray);
+}
+
+
+.announce input {
+    border: 1px solid var(--main-color-gray);
+    color: var(--main-color-gray);
+}
+
+.announce input::placeholder {
+    color: var(--main-color-gray);
+}
