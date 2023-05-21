@@ -59,6 +59,18 @@ p{
     flex-direction: row;
 }
 
+.nav-itens ul{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-itens li{
+    border-radius: 8px;
+
+}
+
+
 
 /*Navbar response*/
 @media only screen and (max-width: 1200px)  {
@@ -80,11 +92,11 @@ p{
 .announce{
     padding: 2rem;
     margin-bottom: 2rem;
-    border: solid 2px var(--main-color-rosa);
+    border: solid 3px var(--main-color-rosa);
     border-radius: 8px;
 }
 .nav-itens{
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .announce h2 {
@@ -107,6 +119,27 @@ p{
     color: var(--main-color-gray);
 }
 
-.announce input::placeholder {
-    color: var(--main-color-gray);
+.announce textarea {
+    height: 15rem;
+}
+
+.announce a {
+    color: var(--main-color-rosa);
+}
+
+.btn_send {
+    color: white;
+    background-color: var(--main-color-rosa);
+
+    font-weight: 600;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    margin-top: 2rem;
+    padding: .8rem;
+    width: 100%;
+
+    box-shadow: #222222;
 }
