@@ -64,15 +64,15 @@
                         </div>
                     </div>
                     
-        
                     <div>
                         <h2>Categoria</h2>
                         <label for="category">Escolha a categoria do seu anúncio</label>
                             <select name="category" id="category">
-                                <option value="0">Free Fire</option>
-                                <option value="1">Clash of Clans</option>
-                                <option value="2">Call of Duty</option>
-                                <option value="3">Fifa 23</option>
+                                <option value="categoria1">Free Fire</option>
+                                <option value="categoria2">Clash of Clans</option>
+                                <option value="categoria3">Call of Duty</option>
+                                <option value="categoria4">Fifa</option>
+                                <option value="categoria5">Roblox</option>
                             </select>
                     </div>
         

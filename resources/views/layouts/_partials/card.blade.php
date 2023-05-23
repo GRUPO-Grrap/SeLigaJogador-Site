@@ -1,6 +1,6 @@
 @foreach($adverts as $advert)
    <a href="/events/{{ $advert->id }}">
-      <div class="card" >
+      <div class="card" data-categoria="{{ $advert->category }}">
          
          <div>
             <img class="image_card" src="img/announcement/{{ $advert->image }}" alt="{{ $advert->title }}">
@@ -11,7 +11,6 @@
             <h4 class="title_account"> {{$advert->title}} </h4>
          </div>
             
-
          <div class="card_price">
             <p> R$ {{ $advert->preco }} </p> 
          </div>
