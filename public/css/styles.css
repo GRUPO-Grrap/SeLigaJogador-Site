@@ -57,7 +57,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding-left: 0.313rem;
     font-size: 16px;
     width: 90%;
+    padding: .5rem;
     height:2.5rem;
+    outline: 0;
 }
 
 

@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top" style="background-color: var(--main-color-azul);"> 
+<nav class="navbar" style="background-color: var(--main-color-azul);"> 
   <!-- Navbar logo-->
   <div class="btn_back">
     <a class="navbar-btn" href="/">
