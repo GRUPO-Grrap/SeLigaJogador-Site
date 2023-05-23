@@ -6,7 +6,6 @@
         <img src="/img/logo.svg" style="margin: auto;" alt="Logo Se Liga Jogador" width="116" height="40">
       </a>
     </div>
-  
       
   <!--Navbar form-->
   <form action="/" method="GET">
@@ -17,7 +16,6 @@
       </button>
     </div>  
   </form>
-    
 
   <!--Navbar menu-->
     <div id="drop" class="dropdown">
@@ -46,7 +44,6 @@
           </li>
         </ul> 
     </div>
-    
 
 </nav>
 

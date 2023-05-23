@@ -3,7 +3,7 @@
     font-family: 'Roboto';
 }
 
-/* color variables */
+/* color varcard_categoryables */
 :root{
     --main-color-rosa: #FF66C4;
     --main-color-azul: #1A0D42;
@@ -343,4 +343,9 @@ footer a {
 
 footer .copy {
     border-top: 0.5px solid #b2b2b2;
+}
+
+/* teste */
+.img_category {
+    border-radius: 8px;
 }

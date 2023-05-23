@@ -61,12 +61,11 @@
                         </div>
                     </div>
                     
-                    
-                    <div class="mt-3">
-                        <h2><i class="material-icons">category</i> Categoria</h2>
+        
+                    <div>
+                        <h2>Categoria</h2>
                         <label for="category">Escolha a categoria do seu anúncio</label>
-                        <div class="input-group input-group-lg mb-1 mt-1">
-                            <select class="form-select" name="category" id="category">
+                            <select name="category" id="category">
                                 <option value="0">Free Fire</option>
                                 <option value="1">Clash of Clans</option>
                                 <option value="2">Call of Duty</option>
