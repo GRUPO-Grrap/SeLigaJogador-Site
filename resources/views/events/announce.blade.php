@@ -106,6 +106,7 @@
                     <button class="btn_send" type="submit">Finalizar</button>
                 </form>
             </div>
+            
         </div>
        
     </main>
