@@ -21,8 +21,8 @@
     <div id="drop" class="dropdown">
       <i id="menuBurguer" class="material-icons dropdown"  data-bs-toggle="dropdown" aria-expanded="false">menu</i>
         <ul class="dropdown-menu">
-          <li><a dropdown-item href="#">Entrar</a></li>
-          <li><a dropdown-item href="#">Cadastrar</a></li>
+          <li><a dropdown-item href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Entrar</a></li>
+          <li><a dropdown-item href="#" data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">Cadastrar</a></li>
         </ul>
     </div>
 

@@ -17,6 +17,9 @@
     </header>
     
     <main>
+        @include("auth.loginModal")
+        @include("auth.registerModal")
+
         <div class="category">
             <h2 class="title_category">Categorias populares</h2>
             <div class="carousel">
