@@ -55,3 +55,42 @@ categoryButtons.forEach(button => {
       })
    })
 })
+
+
+
+
+//viewsenha
+
+function viewSenha() {
+   let inputPass = document.getElementById('password')
+   let btnViewPass = document.getElementById('btnView')
+
+   if(inputPass.type === 'password') {
+       inputPass.setAttribute('type','text')
+       btnViewPass.innerHTML="visibility_off"
+   }else {
+       inputPass.setAttribute('type','password')
+       btnViewPass.innerHTML="visibility"
+   }
+}
+
+
+//viewsenhaRegister
+function viewSenhaRegister() {
+   let inputPassRegister = document.getElementById('passwordRegister')
+   let inputPassRegisterConf = document.getElementById('password-confirm')
+   let btnViewPassRegisterOne = document.getElementById('btnViewRegisterOne')
+   let btnViewPassRegisterTwo = document.getElementById('btnViewRegisterTwo')
+
+   if(inputPassRegister.type === 'password') {
+       inputPassRegister.setAttribute('type','text')
+       btnViewPassRegisterOne.innerHTML="visibility_off"
+       inputPassRegisterConf.setAttribute('type','text')
+       btnViewPassRegisterTwo.innerHTML="visibility_off"
+   }else {
+       inputPassRegister.setAttribute('type','password')
+       btnViewPassRegisterOne.innerHTML="visibility"
+       inputPassRegisterConf.setAttribute('type','password')
+       btnViewPassRegisterTwo.innerHTML="visibility"
+   }
+}

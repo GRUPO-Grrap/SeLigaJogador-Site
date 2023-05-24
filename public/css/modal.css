@@ -1,0 +1,91 @@
+/* global */
+* {
+    font-family: 'Roboto';
+}
+
+/* color variables */
+:root{
+    --main-color-rosa: #FF66C4;
+    --main-color-azul: #1A0D42;
+    --main-color-azul-titulo: #1a0d42d8;
+    --main-color-roxo: #5A3EF7;
+}
+
+.div_header {
+    display: flex;
+    flex-direction: row;
+}
+
+.title_modal {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--main-color-azul);
+}
+
+.btn_close {
+
+    width: 32px;
+    height: 32px;
+    color: white;
+    background-color: #ff66c4bf;
+    border: none;
+    border-radius: 100px;
+}
+.btn_close:hover {
+    background-color: var(--main-color-rosa);
+}
+
+.modal-body {
+    color: var(--main-color-azul);
+}
+
+.modal-body input{
+    border-radius: 8px;
+}
+
+.div_password {
+    position: relative;
+    border-radius: 8px;
+}
+
+.div_password i {
+    color: var(--main-color-azul-titulo);
+    margin: 8px;
+    cursor: pointer;
+    font-size: 24px;
+   
+    position: absolute;
+    right: 5%;
+   
+}
+
+.div_remember {
+    display: flex;
+    justify-content: left;
+}
+
+
+.btn_login{
+    color: white;
+    background-color: var(--main-color-rosa);
+
+    font-weight: 600;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    margin-top: 2rem;
+    padding: .8rem;
+    width: 100%;
+
+    box-shadow: #222222;
+}
+
+.div_links a{
+    color: #1A0D42;
+}
+
+.div_links a:hover{
+    color: var(--main-color-rosa);
+}
