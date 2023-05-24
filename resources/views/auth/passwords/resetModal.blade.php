@@ -1,10 +1,10 @@
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdropResetPass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
 
             <div class="modal-header">
-                <div class="card-header title_modal">{{ __('Login') }}</div>
+                <div class="card-header title_modal">{{ __('Recuperção de senha') }}</div>
                 <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close">X</button>
             </div>
 
@@ -61,19 +61,16 @@
 
                     <div class="div_links row  mt-1">
                         @if (Route::has('password.request'))
-                            <a class="btn btn-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdropResetPass">
+                            <a class="btn btn-link" href="{{ route('password.request') }}">
                                 {{ __('Esqueci minha senha') }}
                             </a>
                         @endif
                         
-                        <a class="btn btn-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">
+                        <a class="btn btn-link" href="" data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">
                             {{ __('Criar uma conta') }}
                         </a>
                     
-                    </div>
-
-
-                       
+                    </div> 
                     </div>
                 </form>
             </div>
