@@ -25,7 +25,7 @@
           <li  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             <a href="/perfil">Perfil</a>
           </li>
-          <li  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          <li>
             <form action="/logout" method="POST">
               @csrf
               <a href="/" 
