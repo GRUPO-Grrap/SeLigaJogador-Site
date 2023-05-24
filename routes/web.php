@@ -19,3 +19,7 @@ Route::get('/', [UserController::class, 'index']);
 Route::get('/events/announce', [UserController::class, 'announce']);
 Route::get('/events/{id}', [UserController::class, 'show']);
 Route::post('/events', [UserController::class, 'store']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
