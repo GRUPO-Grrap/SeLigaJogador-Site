@@ -11,7 +11,12 @@
             <div class="content_top_text">
               <h2 class="content_top_title">O Marketplace para sua conta está aqui!</h2>
               <h3 class="content_top_subtitle">Venda sua conta com com a gente jogador!</h3>
+              @auth
               <a href="/events/announce"><button class="content_top_button">Anunciar</button></a>
+              @endauth
+              @guest
+              <h5 id="subtitleAnunciar">Criar uma conta agora mesmo!</h5>
+              @endguest
             </div>
         </section>
     </header>
