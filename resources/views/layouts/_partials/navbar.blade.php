@@ -21,8 +21,29 @@
     <div id="drop" class="dropdown">
       <i id="menuBurguer" class="material-icons dropdown"  data-bs-toggle="dropdown" aria-expanded="false">menu</i>
         <ul class="dropdown-menu">
-          <li  data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a dropdown-item href="#">Entrar</a></li>
-          <li data-bs-toggle="modal" data-bs-target="#staticBackdropTwo"><a dropdown-item href="#" >Cadastrar</a></li>
+          @auth
+          <li  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <a href="/perfil">Perfil</a>
+          </li>
+          <li  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <form action="/logout" method="POST">
+              @csrf
+              <a href="/" 
+                onclick="event.preventDefault(); 
+                this.closest('form').submit();">
+                Sair
+              </a>
+            </form>
+          </li>
+          @endauth
+          @guest
+          <li  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <a dropdown-item href="#">Entrar</a>
+          </li>
+          <li  data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">
+            <a dropdown-item href="#" >Cadastrar</a>
+          </li>
+          @endguest
         </ul>
     </div>
 
@@ -47,3 +68,6 @@
 
 </nav>
 
+<script>
+  
+</script>
