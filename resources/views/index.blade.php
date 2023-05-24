@@ -19,6 +19,8 @@
     <main>
         @include("auth.loginModal")
         @include("auth.registerModal")
+        @include("auth.passwords.resetModal")
+
 
         <div class="category">
             <h2 class="title_category">Categorias populares</h2>

@@ -54,7 +54,7 @@
 
 
                     <div class="">
-                        <button type="submit" class="btn_login">
+                        <button type="submit" class="btn_modal">
                             {{ __('Login') }}
                         </button>
                     </div>
@@ -66,7 +66,7 @@
                             </a>
                         @endif
                         
-                        <a class="btn btn-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">
+                        <a class="btn btn-link" href="" data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">
                             {{ __('Criar uma conta') }}
                         </a>
                     
