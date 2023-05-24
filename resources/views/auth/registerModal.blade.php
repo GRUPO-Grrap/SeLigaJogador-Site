@@ -70,7 +70,7 @@
 
 
                     <div class="">
-                        <button type="submit" class="btn_login">
+                        <button type="submit" class="btn_modal">
                             {{ __('Finalizar Cadastro') }}
                         </button>
                     </div>

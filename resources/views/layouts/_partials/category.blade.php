@@ -1,5 +1,5 @@
 <div class="card_category" data-categoria="todos">
-    <img class="img_category" src="/img/category/clash_of_clans_category.png" alt="">
+    <img class="img_category" src="/img/category/Todas.png" alt="">
     <p>Todos</p>
 </div>
 
