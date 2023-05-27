@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Advert;
+use App\Models\User;
 
 class UserController extends Controller
 {
@@ -55,6 +56,10 @@ class UserController extends Controller
 
         }
 
+        // usuário logado
+        $user = auth()->user();
+        $advert->user_id = $user->id;
+
         /* salvando dados */
         $advert->save();
 
@@ -67,7 +72,9 @@ class UserController extends Controller
 
         $advert = Advert::findOrFail($id);
 
-        return view('events.show', ['advert' => $advert]);
+        $advertOwner = User::find($advert->user_id); // Recupera o modelo User com base no ID do usuário
+
+        return view('events.show', ['advert' => $advert, 'advertOwner' => $advertOwner]);
 
     }
 }

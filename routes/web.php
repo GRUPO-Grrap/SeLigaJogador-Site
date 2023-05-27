@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
 Route::get('/', [UserController::class, 'index']);
-Route::get('/events/announce', [UserController::class, 'announce']);
+Route::get('/events/announce', [UserController::class, 'announce'])->middleware('auth');
 Route::get('/events/{id}', [UserController::class, 'show']);
 Route::post('/events', [UserController::class, 'store']);
 
