@@ -18,6 +18,7 @@ use App\Http\Controllers\UserController;
 Route::get('/', [UserController::class, 'index']);
 Route::get('/events/announce', [UserController::class, 'announce']);
 Route::get('/events/{id}', [UserController::class, 'show']);
+Route::get('/profile', [UserController::class, 'profile']);
 Route::post('/events', [UserController::class, 'store']);
 
 Auth::routes();

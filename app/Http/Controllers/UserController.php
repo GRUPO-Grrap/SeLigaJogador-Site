@@ -70,4 +70,8 @@ class UserController extends Controller
         return view('events.show', ['advert' => $advert]);
 
     }
+
+    public function profile() {
+        return view('profile');
+    }
 }
