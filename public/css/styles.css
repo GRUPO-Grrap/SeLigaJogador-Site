@@ -122,14 +122,26 @@ i#menuBurguerMobile {
     padding: 0px;
 }
 .dropdown-menu li{
-    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    padding:  8px;
     cursor: pointer;
     border: none;
 }
-.dropdown-menu a {
+.dropdown-menu  a{
     color: var(--main-color-azul);
     text-decoration: none;
+    padding-left: 8px;
+    padding-top: 1.5px;
 }
+
+.dropdown-menu form {
+    width: 100%;
+    padding-top: 1.5px;
+}
+
+
+
 
 .dropdown-menu li:hover{
     color: white;
@@ -137,6 +149,8 @@ i#menuBurguerMobile {
     background-color: var(--main-color-rosa);
     text-decoration: none;
 }
+
+
 
 div#dropMobile{
     display: none;
@@ -280,6 +294,28 @@ div#dropMobile{
     color: #f0f0f0;
 }
 
+.btn_modal_account {
+    color: white;
+    background-color: var(--main-color-rosa);
+
+    font-weight: 600;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    margin-top: 2rem;
+    padding: .8rem;
+    width: 18rem;
+
+    box-shadow: #222222;
+}
+
+.btn_modal_account:hover {
+    background-color: #fc7dcb;
+
+}
+
 /*mobile responsive image*/
 @media only screen and (max-width: 950px) {
     .content_top_title {
@@ -322,7 +358,7 @@ div#dropMobile{
     width: 100%;
 }
 .div_main_card {
-    text-align: left;
+    text-align: center;
     margin: 0 0 24px 0;
     display: inline-block;
 }

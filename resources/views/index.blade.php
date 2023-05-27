@@ -15,7 +15,7 @@
               <a href="/events/announce"><button class="content_top_button">Anunciar</button></a>
               @endauth
               @guest
-              <h5 id="subtitleAnunciar">Criar uma conta agora mesmo!</h5>
+              <button class="btn_modal_account" data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">Criar uma conta agora mesmo!</button>
               @endguest
             </div>
         </section>

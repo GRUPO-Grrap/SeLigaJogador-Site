@@ -1,9 +1,10 @@
 /*Style to the card*/
 .card {
-    width: 280px;   
-    height: 312px;
+    width: 360px;   
+    height: 340px;
     padding: 8px;
-    margin: 8px 0px 0px 8px;
+    margin:  4px;
+    
 
     border: solid 2px var(--main-color-rosa);
     border-radius: 8px;
@@ -68,8 +69,8 @@ span {
 }
 
 .image_card {
-    width: 252px;
-    height: 152px;
+    width: 340px;
+    height: 172px;
     border-radius: 8px;
     text-align: center;
 }
