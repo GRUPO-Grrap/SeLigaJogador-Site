@@ -14,9 +14,9 @@
          <div class="card_price">
             <p> R$ {{ $advert->preco }} </p> 
          </div>
+            
+         <span class="name_user"> {{ Str::limit($advert->description, 40) }} </span>      
 
-         <span class="name_user">User</span>      
-         
       </div>
    </a>
 @endforeach
