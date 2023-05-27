@@ -22,23 +22,23 @@
       <i id="menuBurguer" class="material-icons dropdown"  data-bs-toggle="dropdown" aria-expanded="false">menu</i>
         <ul class="dropdown-menu">
           @auth
-          <li  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          <li>
+            <i class="material-icons">account_circle</i>
             <a href="/perfil">Perfil</a>
           </li>
-          <li>
-            <form action="/logout" method="POST">
-              @csrf
-              <a href="/" 
-                onclick="event.preventDefault(); 
-                this.closest('form').submit();">
+          <form action="/logout" method="POST">
+            <li  onclick="event.preventDefault(); this.closest('form').submit();">
+              <i class="material-icons">logout</i>
+              @csrf  
+              <a href="/">
                 Sair
-              </a>
-            </form>
-          </li>
+              </a> 
+            </li>
+          </form>
           @endauth
           @guest
           <li  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            <a dropdown-item href="#">Entrar</a>
+            <a dropdown-item href="#">Login</a>
           </li>
           <li  data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">
             <a dropdown-item href="#" >Cadastrar</a>
@@ -51,8 +51,29 @@
     <div id="dropMobile"  class="dropleft">
       <i id="menuBurguerMobile" class="material-icons dropdown"  data-bs-toggle="dropdown" aria-expanded="false">menu</i>
         <ul id="boxMobile" class="dropdown-menu">
-          <li data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a dropdown-item href="#">Entrar</a></li>
-          <li data-bs-toggle="modal" data-bs-target="#staticBackdropTwo"><a dropdown-item href="#">Cadastrar</a></li>
+          @auth
+          <li>
+            <i class="material-icons">account_circle</i>
+            <a href="/perfil">Perfil</a>
+          </li>
+          <form action="/logout" method="POST">
+            <li  onclick="event.preventDefault(); this.closest('form').submit();">
+              <i class="material-icons">logout</i>
+              @csrf  
+              <a href="/">
+                Sair
+              </a> 
+            </li>
+          </form>
+          @endauth
+          @guest
+          <li  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <a dropdown-item href="#">Login</a>
+          </li>
+          <li  data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">
+            <a dropdown-item href="#" >Cadastrar</a>
+          </li>
+          @endguest
           <li>
             <form action="/" method="GET">
               <div class="divBuscaMobile">
@@ -63,6 +84,7 @@
               </div>
             </form>
           </li>
+
         </ul> 
     </div>
 
