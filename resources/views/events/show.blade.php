@@ -28,7 +28,9 @@
         <div>
             <button class="btn_buy">Comprar</button>
         </div>
-       
+        
+        <h3>{{ $advertOwner['name'] }}</h3>
+        
     </main>
 
     <footer>

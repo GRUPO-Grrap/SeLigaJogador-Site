@@ -20,11 +20,10 @@ class UserController extends Controller
             ])->get();
 
         } else {
-            $adverts = Advert::all(); // puxanto todos os dados
+            $adverts = Advert::all(); // Puxanto todos os dados
         }
 
         return view('index',['adverts' => $adverts, 'search' => $search]);
-
     }
 
     public function announce() {
@@ -41,7 +40,7 @@ class UserController extends Controller
         $advert->category = $request->category;
         $advert->description = $request->description;
 
-        // image
+        // Image
         if($request->hasFile('image') && $request->file('image')->isValid()) {
 
             $requestImage = $request->image;
@@ -53,31 +52,30 @@ class UserController extends Controller
             $request->image->move(public_path('img/announcement'), $imageName);
 
             $advert->image = $imageName;
-
         }
 
-        // usuário logado
+        // Usuário logado
         $user = auth()->user();
         $advert->user_id = $user->id;
 
-        /* salvando dados */
+        // Salvando dados
         $advert->save();
 
         return redirect('/');
-
     }
 
     // show
     public function show($id) {
-
+        // Recupera o anúncio com base no ID fornecido
         $advert = Advert::findOrFail($id);
-
-        $advertOwner = User::find($advert->user_id); // Recupera o modelo User com base no ID do usuário
-
+    
+        // Recupera o proprietário do anúncio com base no ID do usuário no anúncio
+        $advertOwner = User::where('id', $advert->user_id)->first()->toArray(); 
+    
+        // Retorna a view 'events.show' passando o anúncio e o proprietário do anúncio como dados para a view
         return view('events.show', ['advert' => $advert, 'advertOwner' => $advertOwner]);
-
     }
-
+    
     public function profile() {
         return view('profile');
     }

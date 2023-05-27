@@ -48,7 +48,7 @@ categoryButtons.forEach(button => {
 
          // Verifica se o card possui a mesma categoria selecionada ou se é a categoria "todos"
          if (cardCategoria === categoriaSelecionada || categoriaSelecionada === 'todos') {
-            card.style.display = 'block' // Exibe o card
+            card.style.display = 'inline-block' // Exibe o card
          } else {
             card.style.display = 'none' // Oculta o card
          }
