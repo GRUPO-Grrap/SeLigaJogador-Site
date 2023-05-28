@@ -6,8 +6,6 @@
     <header>
         @include('layouts._partials.navbar_secundary')
     </header>
-    
-    
 
     <main> 
         <div class="nav-itens">

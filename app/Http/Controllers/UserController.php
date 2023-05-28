@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-/* use Illuminate\Http\Request; */
+use Illuminate\Http\Request;
 
 use App\Models\Advert;
 use App\Models\User;
@@ -61,7 +61,7 @@ class UserController extends Controller
         // Salvando dados
         $advert->save();
 
-        return redirect('/');
+        return redirect('/')->with('msg', 'Criado com sucesso!');
     }
 
     // show
@@ -77,6 +77,11 @@ class UserController extends Controller
     }
     
     public function profile() {
-        return view('profile');
+
+        $user = auth()->user();
+
+        $adverts = $user->adverts;
+
+        return view('events.profile', ['adverts' => $adverts]);
     }
 }

@@ -19,9 +19,7 @@ Route::get('/', [UserController::class, 'index']);
 Route::get('/home', [UserController::class, 'index']);
 Route::get('/events/announce', [UserController::class, 'announce'])->middleware('auth');
 Route::get('/events/{id}', [UserController::class, 'show']);
-Route::get('/profile', [UserController::class, 'profile']);
+Route::get('/profile', [UserController::class, 'profile'])->middleware('auth');
 Route::post('/events', [UserController::class, 'store']);
 
 Auth::routes();
-
-
