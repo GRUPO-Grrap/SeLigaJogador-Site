@@ -26,6 +26,11 @@
         @include("auth.registerModal")
         @include("auth.passwords.resetModal")
 
+        <div class="mensagem">
+            @if(session('msg'))
+                <p>{{ session('msg') }}</p>
+            @endif
+        </div>
 
         <div class="category">
             <h2 class="title_category">Categorias populares</h2>

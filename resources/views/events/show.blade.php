@@ -5,7 +5,7 @@
 @section('contentSecondary')
 
     <header>
-        @include('layouts._partials.navbar')
+        @include('layouts._partials.navbar_secundary')
     </header>
 
     <main>
