@@ -13,7 +13,12 @@
             <div>
                 @foreach ($adverts as $advert)
                     <p>{{$advert->title}}</p>
-                    <a href="#">Editar</a> <a href="#">Deletar</a>
+                    <a href="#">Editar</a>
+                    <form action="/events/{{ $advert->id }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">Deletar</button>
+                    </form>
                 @endforeach
             </div>
         @else 

@@ -21,5 +21,6 @@ Route::get('/events/announce', [UserController::class, 'announce'])->middleware(
 Route::get('/events/{id}', [UserController::class, 'show']);
 Route::get('/profile', [UserController::class, 'profile'])->middleware('auth');
 Route::post('/events', [UserController::class, 'store']);
+Route::delete('/events/{id}', [UserController::class, 'destroy']);
 
 Auth::routes();
