@@ -71,7 +71,7 @@ class UserController extends Controller
     
         // Recupera o proprietário do anúncio com base no ID do usuário no anúncio
         $advertOwner = User::where('id', $advert->user_id)->first()->toArray(); 
-    
+        
         // Retorna a view 'events.show' passando o anúncio e o proprietário do anúncio como dados para a view
         return view('events.show', ['advert' => $advert, 'advertOwner' => $advertOwner]);
     }
@@ -84,4 +84,12 @@ class UserController extends Controller
 
         return view('events.profile', ['adverts' => $adverts]);
     }
+
+    public function destroy($id) {
+
+        Advert::findOrFail($id)->delete();
+
+        return redirect('/profile');
+    }
+
 }
