@@ -95,9 +95,9 @@
                         <h2><i class="material-icons">article</i> Termos de uso</h2>
                         <div class="form-check"> 
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <p class="form-check-label" for="flexCheckDefault">
+                            <span class="form-check-label" for="flexCheckDefault">
                                 Eu li e concordo com os <a href="#">Termos de uso</a> da site Se Liga Jogador
-                            </p>
+                            </span>
                         </div>
                     </div>
                 

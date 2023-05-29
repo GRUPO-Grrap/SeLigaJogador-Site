@@ -18,6 +18,8 @@ main{
 p{
     margin: 0;
     align-items: center;
+    text-align: justify;
+    white-space: pre-wrap;
 }
 
 
@@ -108,7 +110,12 @@ p{
 
 .description {
     margin: .8rem 0 1rem 0;
+    border: solid 2px rgb(183, 183, 183);
+    border-radius: 8px;
+    padding: 21px;
 }
+
+
 
 .description h4{
     font-weight: 500;
