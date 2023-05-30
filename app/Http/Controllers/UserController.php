@@ -61,7 +61,7 @@ class UserController extends Controller
         // Salvando dados
         $advert->save();
 
-        return redirect('/')->with('msg', 'Criado com sucesso!');
+        return redirect('/')->with('view', view('events.msgSucessful'));
     }
 
     // show
