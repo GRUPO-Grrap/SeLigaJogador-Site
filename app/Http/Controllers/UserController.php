@@ -92,4 +92,12 @@ class UserController extends Controller
         return redirect('/profile');
     }
 
+    public function edit($id) {
+        
+        $advert = Advert::findOrFail($id);
+
+        return view('events.edit', ['advert' => $advert]);
+
+    }
+
 }
