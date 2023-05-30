@@ -1,0 +1,49 @@
+* {
+    font-family: 'Roboto';
+}
+
+/* color variables */
+:root{
+    --main-color-rosa: #FF66C4;
+    --main-color-azul: #1A0D42;
+    --main-color-azul-titulo: #1a0d42d8;
+    --main-color-roxo: #5A3EF7;
+}
+
+main{
+   margin: 0rem 11rem 0rem 11rem;
+}
+
+.my-announce {
+    border: solid 2px red;
+}
+
+.card-options {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 380px;
+    
+    
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 8px auto;
+}
+.options a {
+    color: white;
+    text-decoration: none;
+}
+
+.options .btn-edit {
+    margin-right: 4px;
+    color: azure;
+    background-color: var(--main-color-azul-titulo);
+}
+.options .btn-delete {
+    margin-left: 4px;
+    color: azure;
+    background-color: red;
+}

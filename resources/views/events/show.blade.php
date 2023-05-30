@@ -5,7 +5,7 @@
 @section('contentSecondary')
 
     <header>
-        @include('layouts._partials.navbar_secundary')
+        @include('layouts._partials.navbar')
     </header>
 
     <main>
@@ -19,21 +19,21 @@
             <h4 class="price">R${{ $advert->preco }}</h4>
         </div>
 
-        <div class="description">
+        <div class="description ">
             <h4>Drescrição da conta</h4>
             <p>
                 {{ $advert->description }}
             </p>
         </div>
+
+        <div class="profile-view">
+            <h3>{{ $advertOwner['name'] }}</h3>
+        </div>
+
         <div>
             <button class="btn_buy">Comprar</button>
         </div>
         
-        <h3>{{ $advertOwner['name'] }}</h3>
         
     </main>
-
-    <footer>
-        @include('layouts._partials.footer')
-    </footer>
 @endsection

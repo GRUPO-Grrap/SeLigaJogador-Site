@@ -143,3 +143,8 @@ p{
 
     box-shadow: #222222;
 }
+
+.profile-view  {
+    border: 1px solid red;
+    margin-bottom: 8px;
+}
