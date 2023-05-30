@@ -54,7 +54,7 @@
           @auth
           <li>
             <i class="material-icons">account_circle</i>
-            <a href="/perfil">Perfil</a>
+            <a href="/profile">Perfil</a>
           </li>
           <form action="/logout" method="POST">
             <li  onclick="event.preventDefault(); this.closest('form').submit();">
