@@ -11,7 +11,6 @@
     <main>
         <div class="my-information">
             <h1>aqui é meu perfil</h1>
-            <p>Olá </p>
         </div>
         <div class="my-announce">
             <h1>Meus Anúncios</h1>
