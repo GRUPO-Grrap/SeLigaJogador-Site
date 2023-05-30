@@ -29,7 +29,8 @@ class UserController extends Controller
     public function announce() {
         return view('events.announce');
     }
-    //anuncio
+
+    // Anuncio
     public function store(Request $request) {
 
         $advert = new Advert;
@@ -76,11 +77,6 @@ class UserController extends Controller
         return view('events.show', ['advert' => $advert, 'advertOwner' => $advertOwner,]);
 
     }
-
-   
-    
-
-    
     
     public function profile() {
 
@@ -90,7 +86,6 @@ class UserController extends Controller
 
         return view('events.profile', ['adverts' => $adverts]);
     }
-
 
     public function destroy($id) {
 
