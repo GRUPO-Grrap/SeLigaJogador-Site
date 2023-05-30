@@ -7,6 +7,7 @@
         @include('layouts._partials.navbar_secundary')
     </header>
 
+
     <main>
         <div class="my-information">
             <h1>aqui é meu perfil</h1>
@@ -20,7 +21,11 @@
                         @include('layouts._partials.card')
                         <div class="options">
                             <button class="btn btn-edit"><a href="#">Editar</a></button> 
-                            <button class="btn btn-delete" ><a href="#">Deletar</a></button> 
+                            <form action="/events/{{ $advert->id }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit">Deletar</button>
+                            </form>
                         </div>
                     @endforeach
                 </div>
@@ -30,6 +35,26 @@
         </div>
     </main>
 
+
+    <div>
+        <h1>Meus Anúncios</h1>
+        @if(count($adverts) > 0)
+            <div>
+                @foreach ($adverts as $advert)
+                    <p>{{$advert->title}}</p>
+                    <a href="#">Editar</a>
+                    <form action="/events/{{ $advert->id }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">Deletar</button>
+                    </form>
+                @endforeach
+            </div>
+        @else 
+            <p>Você ainda não tem anúncios, <a href="/events/announce">anunciar</a></p>
+        @endif
+    </div>
+  </main>
     
 @endsection
 
