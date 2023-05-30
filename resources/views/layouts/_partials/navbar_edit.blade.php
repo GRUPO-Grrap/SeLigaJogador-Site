@@ -1,10 +1,10 @@
 <nav class="navbar" style="background-color: var(--main-color-azul);"> 
   <!-- Navbar logo-->
   <div class="btn_back">
-    <a class="navbar-btn" href="/">
-      <i class="material-icons">home</i> 
+    <a class="navbar-btn" href="/profile">
+      <i class="material-icons">account_circle</i>
       <h6>
-        Home
+        Perfil
       </h6>
     </a>
   </div>

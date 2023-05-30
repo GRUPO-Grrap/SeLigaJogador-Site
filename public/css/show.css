@@ -92,16 +92,20 @@ p{
     border-radius: 8px;
     
     box-shadow: #222222;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 /*description configurantion*/
 .info {
     margin-top: .8rem;
-    word-wrap: break-word;
+    
 }
 .title {
     font-weight: bold;
+}
+.info p{
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 .price {
     color: var(--main-color-rosa);
@@ -113,6 +117,7 @@ p{
     border: solid 2px rgb(183, 183, 183);
     border-radius: 8px;
     padding: 21px;
+    word-wrap: break-word;
 }
 
 
@@ -131,7 +136,7 @@ p{
     border: none;
     border-radius: 8px;
 
-    margin-bottom: 2rem;
+    margin: 2rem 0 2rem 0;
     padding: .8rem;
     width: 100%;
 
@@ -182,6 +187,37 @@ footer a {
     text-decoration: none;
 }
 
+
 footer .copy {
     border-top: 0.5px solid #b2b2b2;
+}
+
+
+.profile-view  {
+    margin: .8rem 0 1rem 0;
+    border: solid 2px rgb(183, 183, 183);
+    border-radius: 8px;
+    padding: 21px;
+}
+
+
+.img-profile { 
+    font-size: 128px;
+}
+
+.user {
+   text-align: center;
+}
+
+.info-user { 
+    padding: 16px;
+    width: 100%;
+}
+
+.info-user h4{ 
+    font-weight: bold;
+}
+
+.info-user p{ 
+    color: red;
 }
