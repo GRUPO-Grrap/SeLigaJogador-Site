@@ -18,9 +18,26 @@
             @if(count($adverts) > 0)
                 <div class="card-options">
                     @foreach ($adverts as $advert)
-                        @include('layouts._partials.card')
+                        <div class="card" data-categoria="{{ $advert->category }}">
+            
+                            <div>
+                            <img class="image_card" src="img/announcement/{{ $advert->image }}" alt="{{ $advert->title }}">
+                            <span>Conta criada em: {{ date('Y'), strtotime($advert->date) }}</span>
+                            </div>
+                            
+                            <div class="titulo">
+                            <h4 class="title_account"> {{$advert->title}} </h4>
+                            </div>
+                            
+                            <div class="card_price">
+                            <p> R$ {{ $advert->preco }} </p> 
+                            </div>
+                            
+                            <span class="name_user"> {{ Str::limit($advert->description, 40) }} </span>      
+                
+                        </div>
                         <div class="options">
-                            <button class="btn btn-edit"><a href="#">Editar</a></button> 
+                            <button class="btn btn-edit"><a href="/events/edit/{{ $advert->id }}">Editar</a></button> 
                             <form action="/events/{{ $advert->id }}" method="POST">
                                 @csrf
                                 @method('DELETE')
