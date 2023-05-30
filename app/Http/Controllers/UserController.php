@@ -35,7 +35,7 @@ class UserController extends Controller
         $advert = new Advert;
 
         $advert->title = $request->title;
-        $advert->date = $request->date; 
+        $advert->date = $request->date;
         $advert->preco = $request->preco;
         $advert->category = $request->category;
         $advert->description = $request->description;
@@ -61,14 +61,14 @@ class UserController extends Controller
         // Salvando dados
         $advert->save();
 
-        return redirect('/')->with('view', view('events.msgSucessful'));
+        return redirect('/')->with('message', 'Sua Conta foi registrada com sucesso!');
     }
 
     // show
     public function show($id) {
         // Recupera o anúncio com base no ID fornecido
         $advert = Advert::findOrFail($id);
-    
+        
         // Recupera o proprietário do anúncio com base no ID do usuário no anúncio
         $advertOwner = User::where('id', $advert->user_id)->first()->toArray(); 
         
@@ -93,6 +93,14 @@ class UserController extends Controller
         Advert::findOrFail($id)->delete();
 
         return redirect('/profile');
+    }
+
+    public function edit($id) {
+        
+        $advert = Advert::findOrFail($id);
+
+        return view('events.edit', ['advert' => $advert]);
+
     }
 
 }
