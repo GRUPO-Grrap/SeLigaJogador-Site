@@ -13,6 +13,10 @@
 main{
    margin: 0rem 11rem 0rem 11rem;
 }
+.my-information {
+    margin-top: 16px;
+    background-color: #5A3EF7;
+}
 
 .my-announce {
     border: solid 2px red;
