@@ -13,23 +13,102 @@
 main{
    margin: 0rem 11rem 0rem 11rem;
 }
+
 .my-information {
-    margin-top: 16px;
-    background-color: #5A3EF7;
+    margin: 16px 0 24px 0;
+    border-radius: 8px;
 }
+
+.my-image{
+    font-size: 128px;
+}
+
+.name-user{
+    margin: auto 16px;
+}
+.name-user h1{
+    font-weight: bold;
+}
+
+.nav-profile ul li a{
+    text-decoration: none;
+    color: var(--main-color-rosa);
+}
+
+.div_main_card h1{
+    text-align: left;
+    font-weight: bold;
+    color: var(--main-color-azul-titulo);
+    margin: 0 10px 16px 10px;
+    width: 100%;
+
+    margin-top: 24px;
+}
+
+
+/*My-card*/
+.my-card {
+    width: 360px;   
+    height: 400px;
+    padding: 8px;
+    margin:  4px;
+    
+
+    border: solid 2px var(--main-color-rosa);
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    color: var(--main-color-azul);
+
+    display: inline-block;
+}
+
+.card_price p{
+    text-align: center; 
+}
+
+@media only screen and (max-width: 600px) {
+    .my-card {
+        width: 212px;   
+        height: 340px;
+        padding: 8px;
+        margin: 10px;
+
+        border: solid 2px var(--main-color-rosa);
+        border-radius: 8px;
+        text-align: center;
+        align-items: center;
+        color: var(--main-color-azul);
+
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 478px) {
+    .my-card {
+        width: 280px;   
+        height: 370px;
+        padding: 8px;
+        margin: 8px 0px 0px 8px;
+    
+        border: solid 2px var(--main-color-rosa);
+        border-radius: 8px;
+        text-align: center;
+        align-items: center;
+        color: var(--main-color-azul);
+    
+        display: inline-block;
+    }
+    
+}
+
+
+
 
 .my-announce {
     border: solid 2px red;
 }
 
-.card-options {
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    width: 380px;
-    
-    
-}
 .options{
     display: flex;
     flex-direction: row;
@@ -40,6 +119,11 @@ main{
     color: white;
     text-decoration: none;
 }
+.options a:hover {
+    color: var(--main-color-azul);
+    text-decoration: none;
+}
+
 
 .options .btn-edit {
     margin-right: 4px;
@@ -50,4 +134,15 @@ main{
     margin-left: 4px;
     color: azure;
     background-color: red;
+}
+
+
+/*Edit style*/
+.title-edit {
+    margin: 24px 0 24px 0;
+    text-align: center;
+}
+
+.title-edit h3 {
+    font-weight: bold;
 }

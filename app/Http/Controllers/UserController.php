@@ -73,8 +73,12 @@ class UserController extends Controller
         $advertOwner = User::where('id', $advert->user_id)->first()->toArray(); 
         
         // Retorna a view 'events.show' passando o anúncio e o proprietário do anúncio como dados para a view
-        return view('events.show', ['advert' => $advert, 'advertOwner' => $advertOwner]);
+        return view('events.show', ['advert' => $advert, 'advertOwner' => $advertOwner,]);
+
     }
+
+   
+    
 
     
     

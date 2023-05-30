@@ -4,11 +4,11 @@
 
 @section('contentSecondary')
     <header>
-        @include('layouts._partials.navbar_secundary')
+        @include('layouts._partials.navbar_edit')
     </header>
 
     <main> 
-        <div>
+        <div class="title-edit">
             <h3>Editando: {{ $advert->title }}</h3>
          </div>
           <div class="announce">
@@ -19,35 +19,34 @@
                     
                     {{-- Title --}}
                     <div>
-                        <h2><i class="material-icons">campaign</i> Anúncio</h2>
-                        <label class="form-label" for="title">Escolha um título para seu anúncio:</label>
+                        <h2>Titulo</h2>
+                        <label class="form-label" for="title">Edite seu titulo:</label>
                         <div class="input-group input-group-lg mb-1 mt-1">
                             <input type="text" class="form-control" id="title" name="title" placeholder="Digite aqui o nome do seu anuncio" value="{{ $advert->title }}">
                         </div>
-                        <span>Por exemplo: conta Free Fire, rank da sua conta, nome do jogador ou atribuição.</span>
                     </div>
                     
                     {{-- Date --}}
                     <div class="mt-3">
-                        <h2><i class="material-icons">calendar_month</i> Ano de criação da conta</h2>
-                        <label for="date">Insira a data de criação da conta</label>
+                        <h2>Ano de criação da conta</h2>
+                        <label for="date">Edite a data de criação da conta:</label>
                         <div  class="input-group input-group-lg mb-1 mt-1">
-                            <input type="date" class="form-control" id="date" name="date" placeholder="R$0,00">
+                            <input type="date" class="form-control" id="date" name="date" value="{{ $advert->date }}">
                         </div>
                     </div>
                         
                     {{-- Price --}}
                     <div class="mt-3">
-                        <h2><i class="material-icons">payments</i> Valor</h2>
-                        <label for="preco">Valor do anúncio</label>
+                        <h2>Valor</h2>
+                        <label for="preco">Edite o valor do seu produto:</label>
                         <div class="input-group input-group-lg mb-1 mt-1">
-                            <input type="number" class="form-control" id="preco" name="preco" placeholder="R$0,00">
+                            <input type="number" class="form-control" id="preco" name="preco" value="{{ $advert->preco }}">
                         </div>
                     </div>
                     
                     <div class="mt-3">
-                        <h2><i class="material-icons">category</i> Categoria</h2>
-                        <label for="category">Escolha a categoria do seu anúncio</label>
+                        <h2>Categoria</h2>
+                        <label for="category">Edite a categoria do seu anuncio:</label>
                         <div class="input-group input-group-lg mb-1 mt-1">
                             <select class="form-control" name="category" id="category">
                                 <option  value="categoria1">Free Fire</option>
@@ -59,34 +58,24 @@
                     </div>
                     
                     <div class="mt-3">
-                        <h2><i class="material-icons">description</i> Descrição</h2>
-                        <label for="description">Drescreva seu anúncio</label>
+                        <h2>Descrição</h2>
+                        <label for="description">Edite a descrição do seu anúncio</label>
                         <div class="input-group input-group-lg mb-1 mt-1">
-                            <textarea class="form-control" name="description" id="description"></textarea>
+                            <textarea class="form-control" name="description" id="description" value="{{ $advert->description }}"></textarea>
                         </div>
-                        <span>Adicionar contatos pessoais como WhataApp, Discord, Facebook, ou qualquer outro meio de comunicação fará com que o seu anúncio seja aprovado</span>
                     </div>
                     
                     <div class="mt-3">
                         <h2 for="image"><i class="material-icons">image</i> Imagens</h2>
                         <div  class="input-group input-group-lg mb-1 mt-1">
                             <input class="form-control"  type="file" name="image" id="image">
-                            <img src="/img/announcement/{{ $advert->image }}" alt="{{ $advert->title }}">
+                            <img style="width: 100%" src="/img/announcement/{{ $advert->image }}" alt="{{ $advert->title }}">
                         </div>
                         <span>Imagens que não tiverem relção com os anuncio, serão penalizadas</span>
                     </div>
                    
-                    <div class="mt-3">
-                        <h2><i class="material-icons">article</i> Termos de uso</h2>
-                        <div class="form-check"> 
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <span class="form-check-label" for="flexCheckDefault">
-                                Eu li e concordo com os <a href="#">Termos de uso</a> da site Se Liga Jogador
-                            </span>
-                        </div>
-                    </div>
                 
-                    <button class="btn_send" type="submit">Finalizar</button>
+                    <button class="btn_send" type="submit">Salvar</button>
                 </form>
             </div>
             

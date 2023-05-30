@@ -8,69 +8,30 @@
           <h6 class="text-uppercase fw-bold mb-4" style="color: white">
             <img class="m-2" src="/img/logo_footer.svg" style="width: 32px; height: 32px;" alt="Logo Se Liga Jogador branca">Se Liga Jogador
           </h6>
-          <p class="text-justify">
-            Somos a solução para o mercado digital, disponibilizando uma
-            plataforma moderna que permite que o comprador receba pelo
-            produto / serviço desejado, e que o vendedor receba para sua venda.
-            Tudo isso com praticidade e segurança.
-          </p>
+          <p class="text-justify">Somos a solução para o mercado digital, disponibilizando uma plataforma moderna que permite que o comprador receba peloproduto / serviço desejado, e que o vendedor receba para sua venda. Tudo isso com praticidade e segurança.</p>
         </div>
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">
-            Acesso rápido
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Anunciar</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Perguntas Frequentes</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Categorias</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Central de ajuda</a>
-          </p>
+          <h6 class="text-uppercase fw-bold mb-4">Acesso rápido</h6>
+          <p><a href="#!" class="text-reset">Perguntas Frequentes</a></p>
+          <p><a href="#!" class="text-reset">Categorias</a></p>
+          <p><a href="#!" class="text-reset">Central de ajuda</a></p>
         </div>
 
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Como Funciona
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Saiba mais</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vantagens</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Tarifas e prazos</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Formas de pagamentos</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Verificador de contas</a>
-          </p>
+          <h6 class="text-uppercase fw-bold mb-4">Como Funciona</h6>
+          <p><a href="#!" class="text-reset">Tarifas e prazos</a></p>
+          <p><a href="#!" class="text-reset">Formas de pagamentos</a></p>
+          <p><a href="#!" class="text-reset">Verificador de contas</a></p>
         </div>
 
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Institucional
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Termos de uso</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Politica de privacidade</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Politica de reembolso</a>
-          </p>
+          <h6 class="text-uppercase fw-bold mb-4">Institucional</h6>
+          <p><a href="#!" class="text-reset">Termos de uso</a></p>
+          <p><a href="#!" class="text-reset">Politica de privacidade</a></p>
+          <p><a href="#!" class="text-reset">Politica de reembolso</a></p>
         </div>
-      
       </div>
       <!-- Grid row -->
     </div>

@@ -27,6 +27,7 @@ p{
     display: flex;
     flex-direction: row;
     height: 72px;
+    width: 100%;
 }
 
 /*Navbar Search config*/
@@ -169,6 +170,7 @@ div#dropMobile{
         margin: auto;
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
     
     .divBusca {
@@ -338,7 +340,7 @@ div#dropMobile{
    text-transform: uppercase;
 }
 
-.title_result h3 {
+.title_result{
     font-size: 24px;
  }
 
@@ -346,7 +348,7 @@ div#dropMobile{
     text-align: left;
     font-weight: bold;
     color: var(--main-color-azul-titulo);
-    margin: 16px 10px 16px 10px;
+   
     width: 100%;
 }
 
@@ -354,7 +356,7 @@ div#dropMobile{
     text-align: left;
     font-weight: bold;
     color: var(--main-color-azul-titulo);
-    margin: 0 10px 16px 10px;
+
     width: 100%;
 }
 .div_main_card {
