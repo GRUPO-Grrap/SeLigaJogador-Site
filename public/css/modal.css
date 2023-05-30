@@ -90,3 +90,52 @@
 .div_links a:hover{
     color: var(--main-color-rosa);
 }
+
+
+/*Modal mensagem de sucesso*/
+.msgBody {
+    text-align: center;
+}
+
+
+
+.msgScs {
+    margin: 16px;
+    font-weight: bold;
+}
+
+.msgBody div a{
+    text-decoration: none;
+}
+
+.btn-contact {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: var(--main-color-rosa);
+
+    font-weight: 600;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    margin: 1rem auto;
+    padding: .8rem;
+    width: 100%;
+
+    box-shadow: #222222;
+
+    padding:  4px auto;
+}
+
+.btn-contact:hover {
+   
+    color: var(--main-color-azul-titulo);
+    background-color: #f544b1;
+
+   
+}
+
+
+
