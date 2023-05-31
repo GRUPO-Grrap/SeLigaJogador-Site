@@ -74,7 +74,6 @@
             @if($search)
                 <h3>você buscou por: {{ $search }}</h3>
             @else        
-               
             @endif
         </div>
 
