@@ -93,5 +93,5 @@
     <footer>
         @include('layouts._partials.footer')
     </footer>
-    
+ 
 @endsection
