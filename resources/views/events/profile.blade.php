@@ -13,7 +13,7 @@
                 <i class="material-icons my-image">account_circle</i>
             </div>
             <div class="name-user">
-                <h1>Nome do usuário</h1>   
+                <h1></h1>   
             </div> 
         </div>   
 

@@ -51,7 +51,7 @@
                             <p>Verifique seus dados da conta cadastrada com nosso suporte</p>
                         </div>
                         <div>
-                            <a href="https://wa.me/5569981313095" target="_blank">
+                            <a href="https://wa.me/5569993231388" target="_blank">
                                 <button class="btn btn-contact">
                                     <i class="material-icons">smartphone</i>
                                     Suporte

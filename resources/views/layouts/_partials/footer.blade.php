@@ -6,7 +6,9 @@
       <div class="row mt-3">
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <h6 class="text-uppercase fw-bold mb-4" style="color: white">
-            <img class="m-2" src="/img/logo_footer.svg" style="width: 32px; height: 32px;" alt="Logo Se Liga Jogador branca">Se Liga Jogador
+            <a href="/" style="color: white">
+              <img class="m-2" src="/img/logo_footer.svg" style="width: 32px; height: 32px;" alt="Logo Se Liga Jogador branca">Se Liga Jogador
+            </a>
           </h6>
           <p class="text-justify">Somos a solução para o mercado digital, disponibilizando uma plataforma moderna que permite que o comprador receba peloproduto / serviço desejado, e que o vendedor receba para sua venda. Tudo isso com praticidade e segurança.</p>
         </div>
@@ -28,9 +30,9 @@
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Institucional</h6>
-          <p><a href="termos" class="text-reset">Termos de uso</a></p>
-          <p><a href="privacidade" class="text-reset">Politica de privacidade</a></p>
-          <p><a href="reembolso" class="text-reset">Politica de reembolso</a></p>
+          <p><a href="/termos" class="text-reset">Termos de uso</a></p>
+          <p><a href="/privacidade" class="text-reset">Politica de privacidade</a></p>
+          <p><a href="/reembolso" class="text-reset">Politica de reembolso</a></p>
         </div>
       </div>
       <!-- Grid row -->

@@ -78,7 +78,7 @@
           <li>
             <form action="/" method="GET">
               <div class="divBuscaMobile">
-                <input class="formSearchMobile" type="search" placeholder=" Pesquisar..." aria-label="Search">
+                <input class="formSearchMobile" type="text" id="search" name="search" placeholder=" Pesquisar..." aria-label="Search">
                 <button class="btnSearchMobile" type="submit"> 
                   <i id="search" class="material-icons">search</i>
                 </button>
