@@ -77,11 +77,6 @@ class UserController extends Controller
 
     }
 
-   
-    
-
-    
-    
     public function profile() {
 
         $user = auth()->user();
@@ -90,7 +85,6 @@ class UserController extends Controller
 
         return view('events.profile', ['adverts' => $adverts]);
     }
-
 
     public function destroy($id) {
 

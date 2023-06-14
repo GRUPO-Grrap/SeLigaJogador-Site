@@ -4,6 +4,34 @@
 
 @section('contentSecondary')
 
+    <?php
+    $acess_token = "TEST-1465027986972225-061221-96e6639b4571b953219e0b98ac03ff70-1366472213";
+
+    require_once('../vendor/autoload.php');
+
+    MercadoPago\SDK::setAccessToken($acess_token);
+
+    $item = new MercadoPago\Item();
+    $item->title = $advert->title;
+    $item->quantity = 1;
+    $item->unit_price = $advert->preco ;
+
+    $preference = new MercadoPago\Preference();
+    $preference->items = array($item);
+
+    $preference->back_urls = array(
+        "success" => 'https://meusite.com/sucess',
+        "failure" => 'https://meusite.com/failure',
+        "pending" => 'https://meusite.com/pending'
+    );
+
+    $preference->notification_url = 'https://meusite.com/notification.php';
+    $preference->external_reference = 4545;
+    $preference->save();
+
+    $link = $preference->init_point;
+    ?>
+
     <header>
         @include('layouts._partials.navbar_show')
     </header>
@@ -42,7 +70,7 @@
         </div>
     
         <div>
-            <button class="btn_buy">Comprar</button>
+            <button class="btn_buy"><a href={{$link}}>Comprar</a></button>
         </div>
         
 
