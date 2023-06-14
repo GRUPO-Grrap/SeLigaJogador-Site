@@ -46,18 +46,21 @@ class UserController extends Controller
         $advert->description = $request->description;
 
         //Verifica e faz upload das imagens, se existir alguma
-        if($request->hasFile('image') && $request->file('image')->isValid()) {
-            //define o nome da imagem no modelo Advert
-            $requestImage = $request->image;
-            
-            $extension = $requestImage->extension();
-
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+            // Verifica se um arquivo de imagem foi enviado e se é válido
+            $requestImage = $request->image; // Obtém o arquivo de imagem enviado
+        
+            $extension = $requestImage->extension(); // Obtém a extensão do arquivo
+        
+            // Gera um nome único para a imagem usando o nome original e a data atual
             $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
-
+        
+            // Move o arquivo de imagem para o diretório de destino (public_path('img/announcement'))
             $request->image->move(public_path('img/announcement'), $imageName);
-
+        
+            // Atribui o nome da imagem ao atributo 'image' do modelo Advert
             $advert->image = $imageName;
-        }
+        }        
 
         // Usuário logado
         $user = auth()->user();
@@ -115,11 +118,7 @@ class UserController extends Controller
         return redirect('/profile');
     }
 
-
     // Termos
-
-    // Métodos de termos de uso
-
     public function termos() {
         return view('termos.termos');
     }
