@@ -28,4 +28,7 @@ Route::get('termos', [UserController::class, 'termos']);
 Route::get('reembolso', [UserController::class, 'reembolso']);
 Route::get('privacidade', [UserController::class, 'privacidade']);
 
+Route::put('/events/update/{id}', [UserController::class, 'update'])->middleware('auth');
+
+
 Auth::routes();

@@ -69,6 +69,7 @@
                                 <option  value="categoria2">Clash of Clans</option>
                                 <option  value="categoria3">Call of Duty</option>
                                 <option  value="categoria4">Fifa 23</option>
+                                <option value="categoriaOutros">Outros</option>
                             </select>
                         </div>
                     </div>

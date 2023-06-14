@@ -42,7 +42,6 @@ class UserController extends Controller
         return view('privacidade');
     }
 
-    //anuncio
     public function store(Request $request) {
 
         $advert = new Advert;
@@ -93,8 +92,6 @@ class UserController extends Controller
 
 
 
-
-
     public function profile() {
 
         $user = auth()->user();
@@ -103,7 +100,6 @@ class UserController extends Controller
 
         return view('events.profile', ['adverts' => $adverts]);
     }
-
 
     public function destroy($id) {
 
@@ -120,4 +116,32 @@ class UserController extends Controller
 
     }
 
+
 }
+
+    public function update(Request $request) {
+
+        $data = $request->all();
+
+        // Image
+        if($request->hasFile('image') && $request->file('image')->isValid()) {
+
+            $requestImage = $request->image;
+            
+            $extension = $requestImage->extension();
+
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+
+            $request->image->move(public_path('img/announcement'), $imageName);
+
+            $data['image'] = $imageName;
+        }
+
+        Advert::findOrFail($request->id)->update($data);
+
+        return redirect('/profile');
+
+    }
+
+}
+
