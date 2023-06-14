@@ -88,10 +88,7 @@ class UserController extends Controller
         return view('events.show', ['advert' => $advert, 'advertOwner' => $advertOwner,]);
 
     }
-
-
-
-
+  
     public function profile() {
 
         $user = auth()->user();
