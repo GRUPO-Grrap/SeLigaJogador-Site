@@ -69,7 +69,16 @@
         </div>
     
         <div>
-            <button class="btn_buy"><a href={{$link}}>Comprar</a></button>
+            @guest
+                <button class="btn_buy">
+                    <a style="text-decoration: none; color: white;" href="">Comprar</a>
+                </button>
+            @endguest
+            @auth
+                <button class="btn_buy">
+                    <a style="text-decoration: none; color: white;" href={{$link}}>Comprar</a>
+                </button>
+            @endauth
         </div>
         
         <div class="div_main_card">
