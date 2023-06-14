@@ -13,15 +13,12 @@
                 <i class="material-icons my-image">account_circle</i>
             </div>
             <div class="name-user">
-<<<<<<< HEAD
-                <h1></h1>
+                <h1>{{ strtoupper($user->name) }}</h1>
             </div>
         </div>
-=======
+        </div>
+        </div>
 
-            </div> 
-        </div>   
->>>>>>> 55f7b3ba7b57f9066c676d235206c72528e24719
 
         <div class="nav-profile">
             <ul class="nav nav-tabs">

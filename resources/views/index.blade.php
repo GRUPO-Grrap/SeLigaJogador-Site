@@ -4,16 +4,24 @@
 
 @section('content')
 
-    <!--Aqui está o header e o navbar-->
+    {{-- Aqui está o header e o navbar --}}
     <header>
+        {{-- Inclue o componente Navbar --}}
         @include('layouts._partials.navbar')
+
+        {{-- Imagem capa da página --}}
         <section class="content_top">
             <div class="content_top_text">
                 <h2 class="content_top_title">O Marketplace para sua conta está aqui!</h2>
                 <h3 class="content_top_subtitle">Venda sua conta com com a gente, jogador!</h3>
+
+                {{-- Atentificando o usuário --}}
                 @auth
+                    {{-- botão de anunciar --}}
                     <a href="/events/announce"><button class="content_top_button">Anunciar</button></a>
                 @endauth
+
+                {{-- Usuário convidade --}}
                 @guest
                     <button class="btn_modal_account" data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">Criar uma conta
                         agora mesmo!</button>
@@ -23,10 +31,11 @@
     </header>
 
     <main>
+        {{-- Inclue os Modais de Login e registro --}}
         @include('auth.loginModal')
         @include('auth.registerModal')
-        @include('auth.passwords.resetModal')
 
+        {{-- Condição: mensagem de sucesso ao registra conta --}}
         @if (session('message'))
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
@@ -36,7 +45,7 @@
             </script>
         @endif
 
-        <!-- Modal -->
+        {{--  Modal da mensagem de sucesso --}}
         <div class="modal fade" id="msgSucessful" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -65,6 +74,7 @@
             </div>
         </div>
 
+        {{-- Seção de categorias --}}
         <div class="category">
             <h2 class="title_category">Categorias populares</h2>
             <div class="carousel">
@@ -72,6 +82,7 @@
             </div>
         </div>
 
+        {{-- Campo onde a pesquisa é retornada --}}
         <div class="title_result">
             @if ($search)
                 <h3>você buscou por: {{ $search }}</h3>
@@ -79,6 +90,7 @@
             @endif
         </div>
 
+        {{-- Campo que renderiza todos os cads --}}
         <div class="div_main_card">
             <h2 class="title_vendas">Vendas</h2>
             @include('layouts._partials.card')
@@ -90,8 +102,9 @@
         </div>
     </main>
 
-    <!--Aqui está o footer-->
+    {{-- Aqui está o footer --}}
     <footer>
+        {{-- Inclue o footer apartide de um componente --}}
         @include('layouts._partials.footer')
     </footer>
 
