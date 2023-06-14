@@ -60,7 +60,6 @@
                         </div>
                     </div>
 
-
                     <div class="mt-3">
                         <h2><i class="material-icons">category</i> Categoria</h2>
                         <label for="category">Escolha a categoria do seu anúncio</label>
@@ -74,7 +73,6 @@
                             </select>
                         </div>
                     </div>
-
 
                     <div class="mt-3">
                         <h2><i class="material-icons">description</i> Descrição</h2>

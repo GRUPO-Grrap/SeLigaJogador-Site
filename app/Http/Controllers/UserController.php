@@ -45,7 +45,7 @@ class UserController extends Controller
         $advert->category = $request->category;
         $advert->description = $request->description;
 
-        //Verifica e faz upload das imagens, se existir alguma
+        // Image Upload
         if ($request->hasFile('image') && $request->file('image')->isValid()) {
             // Verifica se um arquivo de imagem foi enviado e se é válido
             $requestImage = $request->image; // Obtém o arquivo de imagem enviado
@@ -111,9 +111,29 @@ class UserController extends Controller
         return view('events.edit', ['advert' => $advert]);
     }
 
+    // Update
     public function update(Request $request) {
 
-        Advert::findOrFail($request->id)->update($request->all());
+        $data = $request->all();
+
+        // Image Upload
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+            // Verifica se um arquivo de imagem foi enviado e se é válido
+            $requestImage = $request->image; // Obtém o arquivo de imagem enviado
+                
+            $extension = $requestImage->extension(); // Obtém a extensão do arquivo
+                
+            // Gera um nome único para a imagem usando o nome original e a data atual
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+                
+            // Move o arquivo de imagem para o diretório de destino (public_path('img/announcement'))
+            $request->image->move(public_path('img/announcement'), $imageName);
+                
+            // Atribui o nome da imagem ao atributo 'image' do modelo Advert
+            $data['image'] = $imageName;
+        }       
+
+        Advert::findOrFail($request->id)->update($data);
 
         return redirect('/profile');
     }
