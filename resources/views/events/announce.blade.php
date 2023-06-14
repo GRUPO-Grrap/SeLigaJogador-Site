@@ -76,11 +76,11 @@
                     
                     <div class="mt-3">
                         <h2><i class="material-icons">description</i> Descrição</h2>
-                        <label for="description">Drescreva seu anúncio</label>
+                        <label for="description">Crie uma descrição para seu anúncio</label>
                         <div class="input-group input-group-lg mb-1 mt-1">
                             <textarea class="form-control" name="description" id="description"></textarea>
                         </div>
-                        <span>Adicionar contatos pessoais como WhataApp, Discord, Facebook, ou qualquer outro meio de comunicação fará com que o seu anúncio seja aprovado</span>
+                        <span>Adicionar contatos pessoais como WhatsApp, Discord, Facebook, ou qualquer outro meio de comunicação fará com que o seu anúncio seja aprovado</span>
                     </div>
                     
                     <div class="mt-3">
@@ -88,7 +88,7 @@
                         <div  class="input-group input-group-lg mb-1 mt-1">
                             <input class="form-control"  type="file" name="image" id="image">
                         </div>
-                        <span>Imagens que não tiverem relção com os anuncio, serão penalizadas</span>
+                        <span>Imagens que não tiverem relação com o anúncio, serão penalizadas</span>
                     </div>
                    
                     <div class="mt-3">
@@ -96,7 +96,7 @@
                         <div class="form-check"> 
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <span class="form-check-label" for="flexCheckDefault">
-                                Eu li e concordo com os <a href="#">Termos de uso</a> da site Se Liga Jogador
+                                Eu li e concordo com os <a href="#">Termos de uso</a> do site Se Liga Jogador
                             </span>
                         </div>
                     </div>

@@ -29,6 +29,19 @@ class UserController extends Controller
     public function announce() {
         return view('events.announce');
     }
+
+    public function termos() {
+        return view('termos');
+    }
+
+    public function reembolso() {
+        return view('reembolso');
+    }
+
+    public function privacidade() {
+        return view('privacidade');
+    }
+
     //anuncio
     public function store(Request $request) {
 
@@ -44,7 +57,7 @@ class UserController extends Controller
         if($request->hasFile('image') && $request->file('image')->isValid()) {
 
             $requestImage = $request->image;
-            
+
             $extension = $requestImage->extension();
 
             $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
@@ -68,20 +81,20 @@ class UserController extends Controller
     public function show($id) {
         // Recupera o anúncio com base no ID fornecido
         $advert = Advert::findOrFail($id);
-        
+
         // Recupera o proprietário do anúncio com base no ID do usuário no anúncio
         $advertOwner = User::where('id', $advert->user_id)->first()->toArray(); 
-        
+
         // Retorna a view 'events.show' passando o anúncio e o proprietário do anúncio como dados para a view
         return view('events.show', ['advert' => $advert, 'advertOwner' => $advertOwner,]);
 
     }
 
-   
-    
 
-    
-    
+
+
+
+
     public function profile() {
 
         $user = auth()->user();
@@ -100,7 +113,7 @@ class UserController extends Controller
     }
 
     public function edit($id) {
-        
+
         $advert = Advert::findOrFail($id);
 
         return view('events.edit', ['advert' => $advert]);
