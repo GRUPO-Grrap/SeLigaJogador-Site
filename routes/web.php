@@ -24,9 +24,9 @@ Route::get('/profile', [UserController::class, 'profile'])->middleware('auth');
 Route::post('/events', [UserController::class, 'store']);
 Route::delete('/events/{id}', [UserController::class, 'destroy']);
 Route::get('/events/edit/{id}', [UserController::class, 'edit'])->middleware('auth');
-Route::get('termos', [UserController::class, 'termos']);
-Route::get('reembolso', [UserController::class, 'reembolso']);
-Route::get('privacidade', [UserController::class, 'privacidade']);
+Route::get('/termos', [UserController::class, 'termos']);
+Route::get('/reembolso', [UserController::class, 'reembolso']);
+Route::get('/privacidade', [UserController::class, 'privacidade']);
 
 Route::put('/events/update/{id}', [UserController::class, 'update'])->middleware('auth');
 
