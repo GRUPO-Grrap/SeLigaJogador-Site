@@ -109,7 +109,18 @@ class UserController extends Controller
 
     }
 
+<<<<<<< HEAD
     // Métodos de termos de uso
+=======
+    public function update(Request $request) {
+
+        Advert::findOrFail($request->id)->update($request->all());
+
+        return redirect('/profile');
+    }
+
+    // Termos
+>>>>>>> origin/main
     public function termos() {
         return view('termos.termos');
     }
