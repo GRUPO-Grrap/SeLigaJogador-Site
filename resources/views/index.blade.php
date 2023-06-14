@@ -10,7 +10,7 @@
         <section class="content_top">
             <div class="content_top_text">
               <h2 class="content_top_title">O Marketplace para sua conta está aqui!</h2>
-              <h3 class="content_top_subtitle">Venda sua conta com com a gente jogador!</h3>
+              <h3 class="content_top_subtitle">Venda sua conta com com a gente, jogador!</h3>
               @auth
               <a href="/events/announce"><button class="content_top_button">Anunciar</button></a>
               @endauth
@@ -74,7 +74,6 @@
             @if($search)
                 <h3>você buscou por: {{ $search }}</h3>
             @else        
-               
             @endif
         </div>
 

@@ -7,14 +7,13 @@
         @include('layouts._partials.navbar_secundary')
     </header>
 
-
     <main>
         <div class="my-information d-flex">
             <div>
                 <i class="material-icons my-image">account_circle</i>
             </div>
             <div class="name-user">
-                <h1 >Nome do usuário</h1>   
+                <h1>Nome do usuário</h1>   
             </div> 
         </div>   
 
@@ -59,7 +58,7 @@
                             </form>
                         </div>
                     </div>
-                       
+                
                 @endforeach
              @else 
                 <p>Você ainda não tem anúncios, <a href="/events/announce">anunciar</a></p>

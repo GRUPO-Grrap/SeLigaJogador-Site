@@ -29,7 +29,19 @@ class UserController extends Controller
     public function announce() {
         return view('events.announce');
     }
-    //anuncio
+
+    public function termos() {
+        return view('termos');
+    }
+
+    public function reembolso() {
+        return view('reembolso');
+    }
+
+    public function privacidade() {
+        return view('privacidade');
+    }
+
     public function store(Request $request) {
 
         $advert = new Advert;
@@ -44,7 +56,7 @@ class UserController extends Controller
         if($request->hasFile('image') && $request->file('image')->isValid()) {
 
             $requestImage = $request->image;
-            
+
             $extension = $requestImage->extension();
 
             $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
@@ -68,15 +80,15 @@ class UserController extends Controller
     public function show($id) {
         // Recupera o anúncio com base no ID fornecido
         $advert = Advert::findOrFail($id);
-        
+
         // Recupera o proprietário do anúncio com base no ID do usuário no anúncio
         $advertOwner = User::where('id', $advert->user_id)->first()->toArray(); 
-        
+
         // Retorna a view 'events.show' passando o anúncio e o proprietário do anúncio como dados para a view
         return view('events.show', ['advert' => $advert, 'advertOwner' => $advertOwner,]);
 
     }
-
+  
     public function profile() {
 
         $user = auth()->user();
@@ -94,11 +106,39 @@ class UserController extends Controller
     }
 
     public function edit($id) {
-        
+
         $advert = Advert::findOrFail($id);
 
         return view('events.edit', ['advert' => $advert]);
 
     }
 
+
 }
+
+    public function update(Request $request) {
+
+        $data = $request->all();
+
+        // Image
+        if($request->hasFile('image') && $request->file('image')->isValid()) {
+
+            $requestImage = $request->image;
+            
+            $extension = $requestImage->extension();
+
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+
+            $request->image->move(public_path('img/announcement'), $imageName);
+
+            $data['image'] = $imageName;
+        }
+
+        Advert::findOrFail($request->id)->update($data);
+
+        return redirect('/profile');
+
+    }
+
+}
+
