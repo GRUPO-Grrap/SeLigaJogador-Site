@@ -89,6 +89,11 @@
             
         </div>
     </main>
+
+<!--Aqui está o footer-->
+<footer>
+    @include('layouts._partials.footer')
+</footer>
     
 @endsection
 
