@@ -103,6 +103,13 @@ class UserController extends Controller
 
     }
 
+    public function update(Request $request) {
+
+        Advert::findOrFail($request->id)->update($request->all());
+
+        return redirect('/profile');
+    }
+
     // Termos
     public function termos() {
         return view('termos.termos');
