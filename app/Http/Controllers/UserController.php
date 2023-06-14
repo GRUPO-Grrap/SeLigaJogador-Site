@@ -29,6 +29,7 @@ class UserController extends Controller
     public function announce() {
         return view('events.announce');
     }
+
     //anuncio
     public function store(Request $request) {
 
@@ -86,7 +87,6 @@ class UserController extends Controller
         return view('events.profile', ['adverts' => $adverts]);
     }
 
-
     public function destroy($id) {
 
         Advert::findOrFail($id)->delete();
@@ -102,4 +102,16 @@ class UserController extends Controller
 
     }
 
+    // Termos
+    public function termos() {
+        return view('termos.termos');
+    }
+
+    public function reembolso() {
+        return view('termos.reembolso');
+    }
+
+    public function privacidade() {
+        return view('termos.privacidade');
+    }
 }
