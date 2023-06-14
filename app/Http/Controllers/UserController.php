@@ -106,12 +106,8 @@ class UserController extends Controller
         $advert = Advert::findOrFail($id);
         // Retorna a view 'events.edit' passando o anúncio como dado para a view
         return view('events.edit', ['advert' => $advert]);
-
     }
 
-<<<<<<< HEAD
-    // Métodos de termos de uso
-=======
     public function update(Request $request) {
 
         Advert::findOrFail($request->id)->update($request->all());
@@ -119,8 +115,7 @@ class UserController extends Controller
         return redirect('/profile');
     }
 
-    // Termos
->>>>>>> origin/main
+    // Métodos de termos de uso
     public function termos() {
         return view('termos.termos');
     }
