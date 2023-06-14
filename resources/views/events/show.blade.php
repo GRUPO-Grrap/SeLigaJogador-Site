@@ -3,7 +3,8 @@
 @section('title', $advert->title)
 
 @section('contentSecondary')
-
+@include("auth.loginModal")
+@include("auth.registerModal")
     <?php
     $acess_token = "TEST-1465027986972225-061221-96e6639b4571b953219e0b98ac03ff70-1366472213";
 
@@ -67,9 +68,45 @@
                 <p>X - Anuncio não verificado</p>
             </div>
         </div>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="msgRegister" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+
+                    <div class="modal-body msgBody">
+                        <div style="margin-top: 64px">
+                            <h3 class="msgScs">Para realizar uma compra você precisa criar uma conta!</h3>
+                        </div>
+                        <div style="margin-top: 64px">
+                    
+                                <button  class="btn btn-contact" data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">
+                                Criar uma conta
+                                </button>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     
         <div>
-            <button class="btn_buy"><a href={{$link}}>Comprar</a></button>
+            @guest
+                <button class="btn_buy" data-bs-toggle="modal" data-bs-target="#msgRegister">
+                    Comprar
+                </button>
+            @endguest
+            @auth
+                <button class="btn_buy">
+                    <a style="text-decoration: none; color: white;" href={{$link}}>Comprar</a>
+                </button>
+            @endauth
         </div>
         
         <div class="div_main_card">

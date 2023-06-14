@@ -13,7 +13,7 @@
                 <i class="material-icons my-image">account_circle</i>
             </div>
             <div class="name-user">
-                <h1>{{ $user->name }}</h1>   
+
             </div> 
         </div>   
 
