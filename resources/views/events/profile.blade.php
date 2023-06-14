@@ -13,44 +13,44 @@
                 <i class="material-icons my-image">account_circle</i>
             </div>
             <div class="name-user">
-
-            </div> 
-        </div>   
+                <h1>{{ strtoupper($user->name) }}</h1>
+            </div>
+        </div>
 
         <div class="nav-profile">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Meus Anúncios</a>
+                    <a class="nav-link active" aria-current="page" href="#">Meus Anúncios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Minhas Informações</a>
+                    <a class="nav-link" href="#">Minhas Informações</a>
                 </li>
             </ul>
         </div>
 
         <div class="div_main_card">
             <h1>Todos</h1>
-            @if(count($adverts) > 0)
+            @if (count($adverts) > 0)
                 @foreach ($adverts as $advert)
                     <div class="my-card" data-categoria="{{ $advert->category }}">
-            
-                    <div>
-                        <img class="image_card" src="img/announcement/{{ $advert->image }}" alt="{{ $advert->title }}">
-                        <span>Conta criada em: {{ date('Y'), strtotime($advert->date) }}</span>
+
+                        <div>
+                            <img class="image_card" src="img/announcement/{{ $advert->image }}" alt="{{ $advert->title }}">
+                            <span>Conta criada em: {{ date('Y'), strtotime($advert->date) }}</span>
                         </div>
-                            
+
                         <div class="titulo">
-                        <h4 class="title_account"> {{$advert->title}} </h4>
+                            <h4 class="title_account"> {{ $advert->title }} </h4>
                         </div>
-                            
+
                         <div class="card_price">
-                        <p> R${{ $advert->preco }} </p> 
+                            <p> R${{ $advert->preco }} </p>
                         </div>
-                            
-                        <span class="name_user"> {{ Str::limit($advert->description, 40) }} </span>      
+
+                        <span class="name_user"> {{ Str::limit($advert->description, 40) }} </span>
 
                         <div class="options">
-                            <button class="btn btn-edit"><a href="/events/edit/{{ $advert->id }}">Editar</a></button> 
+                            <button class="btn btn-edit"><a href="/events/edit/{{ $advert->id }}">Editar</a></button>
                             <form action="/events/{{ $advert->id }}" method="POST">
                                 @csrf
                                 @method('DELETE')
@@ -58,14 +58,12 @@
                             </form>
                         </div>
                     </div>
-                
                 @endforeach
-             @else 
+            @else
                 <p>Você ainda não tem anúncios, <a href="/events/announce">anunciar</a></p>
             @endif
-            </div>  
+        </div>
     </main>
 
-    
-@endsection
 
+@endsection
