@@ -1,5 +1,6 @@
 <!-- Modal -->
-<div class="modal fade" id="staticBackdropTwo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdropTwo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
 
@@ -18,7 +19,9 @@
                         <label for="name" class="form-label">{{ __('Insira seu nome de usário') }}</label>
 
                         <div class="input-group mb-1">
-                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                            <input id="name" type="text"
+                                class="form-control @error('name') is-invalid @enderror" name="name"
+                                value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                             @error('name')
                                 <span class="invalid-feedback" role="alert">
@@ -33,7 +36,9 @@
                         <label for="email" class="form-label">{{ __('Insira seu  E-mail') }}</label>
 
                         <div class="input-group mb-1 ">
-                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            <input id="email" type="email"
+                                class="form-control @error('email') is-invalid @enderror" name="email"
+                                value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -42,14 +47,17 @@
                             @enderror
                         </div>
                     </div>
-                    
+
                     <!--E-mail-->
                     <div class="row mb-3">
                         <label for="password" class="form-label">{{ __('Insira uma Senha') }}</label>
 
                         <div class="div_password col-md-6 input-group">
-                            <input id="passwordRegister" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-                            <i id="btnViewRegisterOne" class="material-icons" onclick="viewSenhaRegister()">visibility</i>
+                            <input id="passwordRegister" type="password"
+                                class="form-control @error('password') is-invalid @enderror" name="password" required
+                                autocomplete="current-password">
+                            <i id="btnViewRegisterOne" class="material-icons"
+                                onclick="viewSenhaRegister()">visibility</i>
 
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -63,7 +71,8 @@
                         <label for="password-confirm"class="form-label">{{ __('Confirme sua senha') }}</label>
 
                         <div class="div_password col-md-6 input-group">
-                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            <input id="password-confirm" type="password" class="form-control"
+                                name="password_confirmation" required autocomplete="new-password">
                             <i id="btnViewRegisterTwo" class="material-icons">visibility</i>
                         </div>
                     </div>
@@ -82,10 +91,10 @@
                     </div>
 
 
-                       
-                    </div>
-                </form>
+
             </div>
+            </form>
         </div>
     </div>
+</div>
 </div>

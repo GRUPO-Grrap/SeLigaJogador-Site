@@ -27,5 +27,3 @@
     <img class="img_category" src="/img/category/roblox.png" alt="">
     <p>Roblox</p>
 </div>
-
-
