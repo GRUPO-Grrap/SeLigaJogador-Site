@@ -1,15 +1,18 @@
 <nav class="navbar" style="background-color: var(--main-color-azul);">
-    <!-- Navbar logo-->
+
+    {{-- Navbar logo --}}
     <div>
         <a class="navbar-brand" href="/">
             <img src="/img/logo.svg" style="margin: auto;" alt="Logo Se Liga Jogador" width="116" height="40">
         </a>
     </div>
 
-    <!--Navbar menu-->
+    {{-- Menu hamburguer (dropdown) - Navbar --}}
     <div id="drop" class="dropdown">
         <i id="menuBurguer" class="material-icons dropdown" data-bs-toggle="dropdown" aria-expanded="false">menu</i>
         <ul class="dropdown-menu">
+
+            {{-- Verifica se o usuário possui uma conta, se sim abre campos que são permitidos apenas para usuários que cotém contas --}}
             @auth
                 <li>
                     <i class="material-icons">account_circle</i>
@@ -25,6 +28,8 @@
                     </li>
                 </form>
             @endauth
+
+            {{-- Verifica se o usuário não possui uma conta, permitindo campos para usuários que não tem contas --}}
             @guest
                 <li data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     <a dropdown-item href="#">Login</a>
@@ -36,7 +41,7 @@
         </ul>
     </div>
 
-    <!--Navbar menu Mobile responsive-->
+    {{-- Navbar menu Mobile responsive, esse menu é ativado quando uma certa resolução de tela é atingida --}}
     <div id="dropMobile" class="dropleft">
         <i id="menuBurguerMobile" class="material-icons dropdown" data-bs-toggle="dropdown"
             aria-expanded="false">menu</i>

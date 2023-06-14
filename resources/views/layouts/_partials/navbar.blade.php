@@ -1,13 +1,13 @@
 <nav class="navbar fixed-top" style="background-color: var(--main-color-azul);">
 
-    <!-- Navbar logo-->
+    {{-- Navbar logo --}}
     <div>
         <a class="navbar-brand" href="/">
             <img src="/img/logo.svg" style="margin: auto;" alt="Logo Se Liga Jogador" width="116" height="40">
         </a>
     </div>
 
-    <!--Navbar form-->
+    {{-- Navbar barra de pesquisa --}}
     <form action="/" method="GET">
         <div class="divBusca ">
             <input class="formSearch" type="text" id="search" name="search" placeholder=" Pesquisar..."
@@ -19,10 +19,12 @@
     </form>
 
 
-    <!--Navbar menu-->
+
     <div id="drop" class="dropdown">
         <i id="menuBurguer" class="material-icons dropdown" data-bs-toggle="dropdown" aria-expanded="false">menu</i>
         <ul class="dropdown-menu">
+
+            {{-- Verifica se o usuário possui uma conta, se sim abre campos que são permitidos apenas para usuários que cotém contas --}}
             @auth
                 <li>
                     <i class="material-icons">account_circle</i>
@@ -38,6 +40,8 @@
                     </li>
                 </form>
             @endauth
+
+            {{-- Verifica se o usuário não possui uma conta, permitindo campos para usuários que não tem contas --}}
             @guest
                 <li data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     <a dropdown-item href="#">Login</a>
@@ -49,11 +53,13 @@
         </ul>
     </div>
 
-    <!--Navbar menu Mobile responsive-->
+    {{-- Navbar menu Mobile responsive, esse menu é ativado quando uma certa resolução de tela é atingida --}}
     <div id="dropMobile" class="dropleft">
         <i id="menuBurguerMobile" class="material-icons dropdown" data-bs-toggle="dropdown"
             aria-expanded="false">menu</i>
         <ul id="boxMobile" class="dropdown-menu">
+
+            {{-- Verifica se o usuário possui uma conta, se sim abre campos que são permitidos apenas para usuários que cotém contas --}}
             @auth
                 <li>
                     <i class="material-icons">account_circle</i>
@@ -69,6 +75,8 @@
                     </li>
                 </form>
             @endauth
+
+            {{-- Verifica se o usuário não possui uma conta, permitindo campos para usuários que não tem contas --}}
             @guest
                 <li data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     <a dropdown-item href="#">Login</a>
@@ -77,6 +85,8 @@
                     <a dropdown-item href="#">Cadastrar</a>
                 </li>
             @endguest
+
+            {{-- Navbar barra de pesquisa --}}
             <li>
                 <form action="/" method="GET">
                     <div class="divBuscaMobile">
@@ -93,5 +103,3 @@
     </div>
 
 </nav>
-
-<script></script>

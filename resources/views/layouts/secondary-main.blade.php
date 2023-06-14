@@ -34,6 +34,7 @@
 
 <body class="antialiased">
 
+    {{-- Inclue todo conteúdo do site --}}
     @yield('contentSecondary')
 
     <script src="/js/scripts.js"></script>

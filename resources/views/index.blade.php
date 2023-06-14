@@ -93,7 +93,10 @@
         {{-- Campo que renderiza todos os cads --}}
         <div class="div_main_card">
             <h2 class="title_vendas">Vendas</h2>
+            {{-- Inclue os componentes cards --}}
             @include('layouts._partials.card')
+
+            {{-- Condição que retorna a pesquisa feita pelo usuário na barra de pesquisa --}}
             @if (count($adverts) == 0 && $search)
                 <p>Não foi possível encotrar nenhum evento com {{ $search }} <a href="/">Olhar todos!</a> </p>
             @elseif(count($adverts) == 0)

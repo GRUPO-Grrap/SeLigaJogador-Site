@@ -108,10 +108,6 @@ class UserController extends Controller
         return view('events.edit', ['advert' => $advert]);
 
     }
-
-<<<<<<< HEAD
-    // Métodos de termos de uso
-=======
     public function update(Request $request) {
 
         Advert::findOrFail($request->id)->update($request->all());
@@ -120,7 +116,6 @@ class UserController extends Controller
     }
 
     // Termos
->>>>>>> origin/main
     public function termos() {
         return view('termos.termos');
     }
