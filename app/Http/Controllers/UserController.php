@@ -79,13 +79,14 @@ class UserController extends Controller
     }
 
     public function profile() {
-
+        
         $user = auth()->user();
 
         $adverts = $user->adverts;
-
-        return view('events.profile', ['adverts' => $adverts]);
+    
+        return view('events.profile', ['adverts' => $adverts, 'user' => $user]);
     }
+    
 
     public function destroy($id) {
 

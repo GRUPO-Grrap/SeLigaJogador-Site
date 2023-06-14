@@ -28,9 +28,9 @@
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Institucional</h6>
-          <p><a href="termos" class="text-reset">Termos de uso</a></p>
-          <p><a href="privacidade" class="text-reset">Politica de privacidade</a></p>
-          <p><a href="reembolso" class="text-reset">Politica de reembolso</a></p>
+          <p><a href="/termos" class="text-reset">Termos de uso</a></p>
+          <p><a href="/privacidade" class="text-reset">Politica de privacidade</a></p>
+          <p><a href="/reembolso" class="text-reset">Politica de reembolso</a></p>
         </div>
       </div>
       <!-- Grid row -->
