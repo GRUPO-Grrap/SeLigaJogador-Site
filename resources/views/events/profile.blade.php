@@ -16,6 +16,12 @@
                 <h1>{{ strtoupper($user->name) }}</h1>
             </div>
         </div>
+<<<<<<< HEAD
+        </div>
+        </div>
+
+=======
+>>>>>>> origin/main
 
         <div class="nav-profile">
             <ul class="nav nav-tabs">

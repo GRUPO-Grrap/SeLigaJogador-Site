@@ -91,6 +91,10 @@
                         <span>Imagens que não tiverem relção com os anuncio, serão penalizadas</span>
                     </div>
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/main
                     <button class="btn_send" type="submit">Atualizar</button>
                 </form>
             </div>
