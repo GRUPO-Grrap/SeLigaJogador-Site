@@ -60,11 +60,6 @@
                     </div>
 
                     <div class="div_links row  mt-1">
-                        @if (Route::has('password.request'))
-                            <a class="btn btn-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdropResetPass">
-                                {{ __('Esqueci minha senha') }}
-                            </a>
-                        @endif
                         
                         <a class="btn btn-link" href="" data-bs-toggle="modal" data-bs-target="#staticBackdropTwo">
                             {{ __('Criar uma conta') }}
