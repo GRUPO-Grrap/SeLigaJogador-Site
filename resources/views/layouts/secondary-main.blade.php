@@ -11,7 +11,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
          {{-- google icons--}}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     
         {{-- bootstrap --}}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -28,8 +27,6 @@
         <link rel="stylesheet" href="/css/announce.css">
         <link rel="stylesheet" href="/css/show.css">
         <link rel="stylesheet" href="/css/styles.css ">
-    
-
         
     </head>
     </head>

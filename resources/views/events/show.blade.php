@@ -38,14 +38,12 @@
                 <p>X - Telefone não verificado</p>
                 <p>X - Anuncio não verificado</p>
             </div>
-            
         </div>
     
         <div>
             <button class="btn_buy">Comprar</button>
         </div>
         
-
         <div class="div_main_card">
             <h2 class="title_vendas">Recomendados para você!</h2>
             @if(isset($advert))
@@ -114,12 +112,8 @@
 
                     </div>
                 </a>
-
-    
             @endif
         </div>
-        
-    
         
     </main>
     <footer>

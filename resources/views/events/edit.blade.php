@@ -31,7 +31,14 @@
                         <h2>Ano de criação da conta</h2>
                         <label for="date">Edite a data de criação da conta:</label>
                         <div  class="input-group input-group-lg mb-1 mt-1">
-                            <input type="date" class="form-control" id="date" name="date" value="{{ $advert->date }}">
+                            <?php
+                                $formattedDate = '';
+                                if ($advert->date) {
+                                    $dateTime = new DateTime($advert->date);
+                                    $formattedDate = $dateTime->format('Y-m-d');
+                                }
+                            ?>
+                            <input type="date" class="form-control" id="date" name="date" value="{{ $formattedDate }}">
                         </div>
                     </div>
                         
@@ -46,13 +53,14 @@
                     
                     <div class="mt-3">
                         <h2>Categoria</h2>
-                        <label for="category">Edite a categoria do seu anuncio:</label>
+                        <label for="category">Edite a categoria do seu anúncio:</label>
                         <div class="input-group input-group-lg mb-1 mt-1">
                             <select class="form-control" name="category" id="category">
-                                <option  value="categoria1">Free Fire</option>
-                                <option  value="categoria2">Clash of Clans</option>
-                                <option  value="categoria3">Call of Duty</option>
-                                <option  value="categoria4">Fifa 23</option>
+                                <option value="categoria1" {{ $advert->category === 'categoria1' ? 'selected' : '' }}>Free Fire</option>
+                                <option value="categoria2" {{ $advert->category === 'categoria2' ? 'selected' : '' }}>Clash of Clans</option>
+                                <option value="categoria3" {{ $advert->category === 'categoria3' ? 'selected' : '' }}>Call of Duty</option>
+                                <option value="categoria4" {{ $advert->category === 'categoria4' ? 'selected' : '' }}>Fifa 23</option>
+                                <option value="categoriaOutros" {{ $advert->category === 'categoriaOutros' ? 'selected' : '' }}>Outros</option>
                             </select>
                         </div>
                     </div>
@@ -61,7 +69,7 @@
                         <h2>Descrição</h2>
                         <label for="description">Edite a descrição do seu anúncio</label>
                         <div class="input-group input-group-lg mb-1 mt-1">
-                            <textarea class="form-control" name="description" id="description" value="{{ $advert->description }}"></textarea>
+                            <textarea class="form-control" name="description" id="description">{{ $advert->description }}</textarea>
                         </div>
                     </div>
                     
@@ -75,7 +83,7 @@
                     </div>
                    
                 
-                    <button class="btn_send" type="submit">Salvar</button>
+                    <button class="btn_send" type="submit">Atualizar</button>
                 </form>
             </div>
             
