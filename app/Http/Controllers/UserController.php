@@ -115,7 +115,11 @@ class UserController extends Controller
         return redirect('/profile');
     }
 
+
+    // Termos
+
     // Métodos de termos de uso
+
     public function termos() {
         return view('termos.termos');
     }
