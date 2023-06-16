@@ -1,4 +1,4 @@
-<h1>  Se Liga Jogador 🎮 (Projeto em andamento...)</h1>
+<h1> Se Liga Jogador 🎮 </h1>
 
 <h2> Desenvolvedores: </h2>
 
